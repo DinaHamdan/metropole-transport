@@ -1,0 +1,45 @@
+#welcome-page {
+  background-color: rgb(104, 97, 97);
+  background-color: rgb(104, 97, 97);
+}
+#welcome-page #welcome-page-container {
+  background-color: white;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 100px;
+  height: 100vh;
+}
+#welcome-page #desktop-only-container {
+  display: none;
+}
+
+@media screen and (min-width: 400px) {
+  #welcome-page {
+    background-color: white;
+  }
+  #welcome-page #welcome-page-container {
+    display: none;
+  }
+  #welcome-page #desktop-only-container {
+    color: rgb(104, 97, 97);
+    padding: 2em;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+  }
+  #welcome-page #desktop-only-container #dinosaur {
+    width: 150px;
+    height: 150px;
+  }
+  #welcome-page #desktop-only-container .detail-link {
+    color: rgb(104, 97, 97);
+  }
+  #welcome-page #desktop-only-container .detail-link::after {
+    color: rgb(104, 97, 97);
+  }
+}/*# sourceMappingURL=welcome-page.css.map */
