@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- Welcome Section -->
     <section id="welcome-page">
         <div id="welcome-page-container">
             <img src="asset/img/logo1.png" alt="logo-metropole-mobilité">
@@ -27,34 +28,60 @@
             <a class="detail-link" href="/">Détails</a>
         </div>
     </section>
-
+    <!-- Buy e-tickets Section -->
     <section id="e-tickets">
 
-        <div id="orange-bar">
-            <h2>E-tickets</h2>
+        <div id="ticket-orange-bar">
+            <p>E-tickets</p>
         </div>
 
         <div id="with-tickets">
-            <h2>sur mon téléphone</h2>
-            <img src="asset/img/logo9.png" alt="métropole-ticket">
-            <p> 1 Voyage Aix En bus </p>
-            <p>1 e-ticket disponible</p>
+            <h2 class="with-tickets-title">sur mon téléphone</h2>
+            <div id="with-tickets-container">
+                <!-- On click towards use tickets -->
+                <img src="asset/img/logo9.png" alt="métropole-ticket">
+                <p> 1 Voyage Aix En bus </p>
+                <p>1 e-ticket disponible</p>
+            </div>
         </div>
 
-        <div id=" no-tickets">
-            <h2>Aucun tire à utiliser</h2>
-            <p>Vous pouvez achter des titres pour voyager sur le réseau</p>
+        <div id="no-tickets">
+            <h2 class="no-tickets-title">Aucun titre à utiliser.</h2>
+            <p>Vous pouvez acheter des titres pour voyager sur le réseau</p>
         </div>
-        <a href="">Acheter des titres</a>
+
+        <!-- On click towards buy page -->
+        <a id="buy-link" href=""><img class="with-tickets-shop-cart" src="asset/img/logo3bis.png" alt="">Acheter des
+            titres</a>
 
         <div id="navigation">
-            <a href=""><img src="asset/img/logo4.png" alt=""></a>
-            <a href=""><img src="asset/img/logo5.png" alt=""></a>
-            <a href=""><img src="asset/img/logo6.png" alt=""></a>
-            <a href=""><img src="asset/img/logo7.png" alt=""></a>
-            <a href=""><img src="asset/img/logo8.png" alt=""></a>
+            <a href="">
+                <img src="asset/img/logo4.png" alt="">
+                <figcaption>Accueil</figcaption>
+            </a>
+            <a href=""><img src="asset/img/logo5.png" alt="">
+                <figcaption>Horaies</figcaption>
+            </a>
+            <a href=""><img src="asset/img/logo6.png" alt="">
+                <figcaption class="orange-fig-caption">Mes titres</figcaption>
+            </a>
+            <a href=""><img src="asset/img/logo7.png" alt="">
+                <figcaption>Infos trafic</figcaption>
+            </a>
+            <a href=""><img src="asset/img/logo8.png" alt="">
+                <figcaption>Menu</figcaption>
+            </a>
         </div>
     </section>
+
+    <section id="buy">
+        <!-- <div id="buy-orange-bar">
+            <p>Acheter</p>
+        </div> -->
+
+
+    </section>
+    <script src="js/buy.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,145 @@
-#e-tickets {}
+#e-tickets {
+    // border: 1px solid red;
+    height: 100vh;
 
+    #ticket-orange-bar {
+        background-image: linear-gradient(to right, #e68332, #fe4800);
+        height: 70px;
+        color: whitesmoke;
+        font-size: 1.2em;
+        font-weight: 400;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
 
+        p {
+            padding: 0.7em;
+        }
+
+    }
+
+    #with-tickets {
+        padding: 1em;
+        //    When no tickets are bought display none
+        display: none;
+
+        .with-tickets-title {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 1em;
+
+        }
+
+        #with-tickets-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5em;
+
+            p {
+                padding: 5px;
+                font-size: 0.7em;
+                font-weight: 500;
+                text-transform: uppercase;
+
+            }
+        }
+    }
+
+    #no-tickets {
+        // When no tickets are bought
+        margin: 200px 0 50px 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2em;
+        //border: 1px solid red;
+
+        //When tickets are bought
+        //display: none;
+
+        .no-tickets-title {
+            font-weight: 500;
+            font-size: 1.5em;
+            padding: 1em;
+
+        }
+
+    }
+
+    #buy-link {
+        background-color: #fe3b00;
+        border-radius: 10px;
+        display: inline-block;
+        height: 40px;
+        width: 80%;
+
+        //When no tickets are bought
+        padding-top: 10px;
+
+        //When  tickets are bought
+        // padding-top: 10px;
+
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+
+        //When no tickets are bought
+        margin: 0px 0 160px 40px;
+
+        //When  tickets are bought
+        //margin: 220px 0 50px 40px;
+
+        .with-tickets-shop-cart {
+            //When no tickets are bought:
+            //display: none;
+
+            //When tickets are bought:
+            width: 20px;
+            height: 20px;
+            margin: 5px 5px 0 0;
+
+        }
+    }
+
+    #navigation {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        border-top: 2px solid rgba(104, 97, 97, 0.726);
+        height: 50px;
+
+        a {
+            font-size: 0.6em;
+            color: rgba(104, 97, 97, 0.726);
+            text-decoration: none;
+        }
+    }
+
+    #navigation a::after {
+        color: rgba(104, 97, 97, 0.726);
+    }
+
+    .orange-fig-caption {
+        color: #fe3b00;
+    }
+
+    .orange-fig-caption::after {
+        color: #fe3b00;
+    }
+}
+
+@media screen and (min-width:400px) {
+    #e-tickets {
+        display: none;
+
+    }
+}
