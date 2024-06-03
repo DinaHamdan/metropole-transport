@@ -1,0 +1,87 @@
+#buy-tickets {
+    // border: 1px solid red;
+    height: 100vh;
+    margin-top: 50px;
+
+
+    #buy-orange-bar {
+        background-image: linear-gradient(to right, #e68332, #fe4800);
+        height: 70px;
+        color: whitesmoke;
+        font-size: 1.2em;
+        font-weight: 400;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        p {
+            padding: 0.7em;
+        }
+
+    }
+
+    #single-ticket {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px;
+        border-bottom: 2px solid rgba(104, 97, 97, 0.726);
+        height: 100px;
+
+        img {
+            height: 30px;
+        }
+
+        .single-buy {
+            font-size: 1em;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        span {
+            font-size: 0.7em;
+            color: rgba(104, 97, 97, 0.726);
+        }
+    }
+
+    .ticket-counter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        button {
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+        }
+
+        #minus-btn {
+            background-color: white;
+            color: rgba(104, 97, 97, 0.726);
+        }
+
+        #plus-btn {
+            background-color: #fe4800;
+            color: white;
+            //border: none;
+        }
+
+        #price {
+            background-color: rgba(104, 97, 97, 0.288);
+            height: 20px;
+            border-radius: 5px;
+
+
+        }
+
+    }
+}
+
+@media screen and (min-width:400px) {
+    #buy-tickets {
+        display: none;
+
+    }
+}

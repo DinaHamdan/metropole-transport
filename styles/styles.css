@@ -143,6 +143,74 @@
     display: none;
   }
 }
+#buy-tickets {
+  height: 100vh;
+  margin-top: 50px;
+}
+#buy-tickets #buy-orange-bar {
+  background-image: linear-gradient(to right, #e68332, #fe4800);
+  height: 70px;
+  color: whitesmoke;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+#buy-tickets #buy-orange-bar p {
+  padding: 0.7em;
+}
+#buy-tickets #single-ticket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
+  border-bottom: 2px solid rgba(104, 97, 97, 0.726);
+  height: 100px;
+}
+#buy-tickets #single-ticket img {
+  height: 30px;
+}
+#buy-tickets #single-ticket .single-buy {
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#buy-tickets #single-ticket span {
+  font-size: 0.7em;
+  color: rgba(104, 97, 97, 0.726);
+}
+#buy-tickets .ticket-counter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#buy-tickets .ticket-counter button {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+#buy-tickets .ticket-counter #minus-btn {
+  background-color: white;
+  color: rgba(104, 97, 97, 0.726);
+}
+#buy-tickets .ticket-counter #plus-btn {
+  background-color: #fe4800;
+  color: white;
+}
+#buy-tickets .ticket-counter #price {
+  background-color: rgba(104, 97, 97, 0.288);
+  height: 20px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 400px) {
+  #buy-tickets {
+    display: none;
+  }
+}
 * {
   padding: 0;
   margin: 0;

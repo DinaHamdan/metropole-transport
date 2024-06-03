@@ -28,7 +28,7 @@
             <a class="detail-link" href="/">Détails</a>
         </div>
     </section>
-    <!-- Buy e-tickets Section -->
+    <!-- Show e-tickets Section -->
     <section id="e-tickets">
 
         <div id="ticket-orange-bar">
@@ -51,37 +51,72 @@
         </div>
 
         <!-- On click towards buy page -->
-        <a id="buy-link" href=""><img class="with-tickets-shop-cart" src="asset/img/logo3bis.png" alt="">Acheter des
+        <a id="buy-link" href="#buy-tickets"><img class="with-tickets-shop-cart" src="asset/img/logo3bis.png"
+                alt="">Acheter des
             titres</a>
 
         <div id="navigation">
             <a href="">
-                <img src="asset/img/logo4.png" alt="">
+                <img src="asset/img/logo4.png" alt="home-page-icon">
                 <figcaption>Accueil</figcaption>
             </a>
-            <a href=""><img src="asset/img/logo5.png" alt="">
-                <figcaption>Horaies</figcaption>
+            <a href=""><img src="asset/img/logo5.png" alt="time-table-icon">
+                <figcaption>Horaires</figcaption>
             </a>
-            <a href=""><img src="asset/img/logo6.png" alt="">
+            <a href=""><img src="asset/img/logo6.png" alt="ticket-icon">
                 <figcaption class="orange-fig-caption">Mes titres</figcaption>
             </a>
-            <a href=""><img src="asset/img/logo7.png" alt="">
+            <a href=""><img src="asset/img/logo7.png" alt="traffic-icon">
                 <figcaption>Infos trafic</figcaption>
             </a>
-            <a href=""><img src="asset/img/logo8.png" alt="">
+            <a href=""><img src="asset/img/logo8.png" alt="menu-icon">
                 <figcaption>Menu</figcaption>
             </a>
         </div>
     </section>
-
-    <section id="buy">
-        <!-- <div id="buy-orange-bar">
+    <!-- Buy tickets page -->
+    <section id="buy-tickets">
+        <div id="buy-orange-bar">
             <p>Acheter</p>
-        </div> -->
+        </div>
+        <div id="single-ticket">
+            <img src="asset/img/logo6.png" alt="">
+            <div>
+                <p class="single-buy"> 1 Voyage Aix en Bus</p>
+                <span> Valable 60 minutes</span>
+            </div>
+            <div class="ticket-counter">
+
+                <button class="single-minus-btn" id="minus-btn">-</button>
+                <p class="single-counter" id="counter">0</p>
+                <button class="single-plus-btn" id="plus-btn">+</button>
+                <p class="single-price" id="price">1.20 </p><span>€</span>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="multi" id="single-ticket">
+            <img src="asset/img/logo6.png" alt="">
+            <div>
+                <p class="single-buy"> 10 Voyage Aix en Bus</p>
+                <span> Valable 60 minutes sur Aix en Bus Multi-validable</span>
+            </div>
+            <div class="ticket-counter">
+                <button class="multi-minus-btn" id="minus-btn">-</button>
+                <p class="multi-counter" id="counter">0</p>
+                <button class="multi-plus-btn" id="plus-btn">+</button>
+
+                <p class="multiple-price" id="price">9.00 </p><span>€</span>
+            </div>
+        </div>
 
 
     </section>
     <script src="js/buy.js"></script>
+    <script src="js/ticket-counter.js"></script>
 </body>
 
 </html>
