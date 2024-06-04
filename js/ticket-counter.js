@@ -32,10 +32,19 @@ minusBtn.addEventListener("click", () => {
 });
 
 plusBtn.addEventListener("click", () => {
+
     countNum += 1;
     counter.innerHTML = countNum;
-    priceNumSingle += 1.20;
-    singlePrice.innerHTML = priceNumSingle;
+
+    if (countNum >= 2) {
+        priceNumSingle += 1.20;
+        singlePrice.innerHTML = priceNumSingle;
+    }
+    // countNum += 1;
+    // counter.innerHTML = countNum;
+
+    // priceNumSingle += 1.20;
+    // singlePrice.innerHTML = priceNumSingle;
 
 })
 
@@ -73,11 +82,14 @@ multiMinusBtn.addEventListener("click", () => {
 
 multiPlusBtn.addEventListener("click", () => {
 
-    priceNumMultiple += 9.00;
-    multiplePrice.innerHTML = priceNumMultiple;
-
     multiCountNum += 1;
     multiCounter.innerHTML = multiCountNum;
+
+    if (multiCountNum >= 2) {
+        priceNumMultiple += 9.00;
+        multiplePrice.innerHTML = priceNumMultiple;
+
+    }
 
 
 
