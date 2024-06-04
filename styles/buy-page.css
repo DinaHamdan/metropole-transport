@@ -16,7 +16,13 @@
 #buy-tickets #buy-orange-bar p {
   padding: 0.7em;
 }
-#buy-tickets #single-ticket {
+#buy-tickets #buy-tickets-parent {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 350px;
+}
+#buy-tickets #buy-tickets-parent #single-ticket {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -24,41 +30,129 @@
   border-bottom: 2px solid rgba(104, 97, 97, 0.726);
   height: 100px;
 }
-#buy-tickets #single-ticket img {
+#buy-tickets #buy-tickets-parent #single-ticket img {
   height: 30px;
 }
-#buy-tickets #single-ticket .single-buy {
-  font-size: 1em;
+#buy-tickets #buy-tickets-parent #single-ticket .single-buy-title {
+  font-size: 0.9em;
   font-weight: 500;
   text-transform: uppercase;
 }
-#buy-tickets #single-ticket span {
+#buy-tickets #buy-tickets-parent #single-ticket span {
   font-size: 0.7em;
   color: rgba(104, 97, 97, 0.726);
 }
-#buy-tickets .ticket-counter {
+#buy-tickets #buy-tickets-parent .single-ticket-counter-parent {
+  margin-left: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 100px;
+}
+#buy-tickets #buy-tickets-parent .single-ticket-counter-parent .single-ticket-counter {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-#buy-tickets .ticket-counter button {
+#buy-tickets #buy-tickets-parent .single-ticket-counter-parent .single-ticket-counter button {
   border-radius: 50%;
   height: 20px;
   width: 20px;
 }
-#buy-tickets .ticket-counter #minus-btn {
+#buy-tickets #buy-tickets-parent .single-ticket-counter-parent .single-ticket-counter #minus-btn {
   background-color: white;
   color: rgba(104, 97, 97, 0.726);
 }
-#buy-tickets .ticket-counter #plus-btn {
+#buy-tickets #buy-tickets-parent .single-ticket-counter-parent .single-ticket-counter #plus-btn {
   background-color: #fe4800;
   color: white;
 }
-#buy-tickets .ticket-counter #price {
+#buy-tickets #buy-tickets-parent .single-ticket-counter-parent #single-price {
   background-color: rgba(104, 97, 97, 0.288);
   height: 20px;
   border-radius: 5px;
+  width: 32px;
+}
+#buy-tickets #buy-tickets-parent #multi-ticket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
+  border-bottom: 2px solid rgba(104, 97, 97, 0.726);
+  height: 100px;
+}
+#buy-tickets #buy-tickets-parent #multi-ticket img {
+  height: 30px;
+}
+#buy-tickets #buy-tickets-parent #multi-ticket .multi-buy-title {
+  font-size: 0.9em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#buy-tickets #buy-tickets-parent #multi-ticket span {
+  font-size: 0.7em;
+  color: rgba(104, 97, 97, 0.726);
+}
+#buy-tickets #buy-tickets-parent .multi-ticket-counter-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 100px;
+}
+#buy-tickets #buy-tickets-parent .multi-ticket-counter-parent .multi-ticket-counter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#buy-tickets #buy-tickets-parent .multi-ticket-counter-parent .multi-ticket-counter button {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+#buy-tickets #buy-tickets-parent .multi-ticket-counter-parent .multi-ticket-counter #multi-minus-btn {
+  background-color: white;
+  color: rgba(104, 97, 97, 0.726);
+}
+#buy-tickets #buy-tickets-parent .multi-ticket-counter-parent .multi-ticket-counter #multi-plus-btn {
+  background-color: #fe4800;
+  color: white;
+}
+#buy-tickets #buy-tickets-parent .multi-ticket-counter-parent #multi-price {
+  background-color: rgba(104, 97, 97, 0.288);
+  height: 20px;
+  width: 30px;
+  border-radius: 5px;
+}
+#buy-tickets #buy-tickets-parent #total-container {
+  border-top: 3px solid rgba(104, 97, 97, 0.568);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#buy-tickets #buy-tickets-parent #total-container #total-tickets {
+  margin-left: 150px;
+  font-weight: 200;
+}
+#buy-tickets #buy-tickets-parent #total-container #total-tickets span {
+  font-weight: 500;
+}
+#buy-tickets #buy-tickets-parent #total-container #select-buy {
+  background-color: #fe3b00;
+  border-radius: 10px;
+  display: inline-block;
+  height: 40px;
+  width: 90%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  padding-top: 10px;
 }
 
 @media screen and (min-width: 400px) {

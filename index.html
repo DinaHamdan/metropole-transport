@@ -52,9 +52,10 @@
 
         <!-- On click towards buy page -->
         <a id="buy-link" href="#buy-tickets"><img class="with-tickets-shop-cart" src="asset/img/logo3bis.avif"
-                alt="">Acheter des
+                alt="shop-cart-logo">Acheter des
             titres</a>
-
+        <!-- Navigation -->
+        <!-- Figcaption shouldnt be the child of a element Need to change it -->
         <div id="navigation">
             <a href="">
                 <img src="asset/img/logo4.avif" alt="home-page-icon">
@@ -76,45 +77,69 @@
     </section>
     <!-- Buy tickets page -->
     <section id="buy-tickets">
+        <!-- Orange bar  -->
         <div id="buy-orange-bar">
             <p>Acheter</p>
         </div>
-        <div id="single-ticket">
-            <img src="asset/img/logo6.avif" alt="">
-            <div>
-                <p class="single-buy"> 1 Voyage Aix en Bus</p>
-                <span> Valable 60 minutes</span>
-            </div>
-            <div class="ticket-counter">
+        <!-- Parent container -->
+        <div id="buy-tickets-parent">
 
-                <button class="single-minus-btn" id="minus-btn">-</button>
-                <p class="single-counter" id="counter">0</p>
-                <button class="single-plus-btn" id="plus-btn">+</button>
-                <p class="single-price" id="price">1.20 </p><span>€</span>
+            <!-- First Child container -->
+            <div id="child-one">
+                <!-- Buy Single Ticket -->
+                <div id="single-ticket">
+                    <img src="asset/img/logo6.avif" alt="ticket-logo">
+                    <div>
+                        <p class="single-buy-title"> 1 Voyage Aix en Bus</p>
+                        <span> Valable 60 minutes</span>
+                    </div>
+                    <div class="single-ticket-counter-parent">
+                        <div class="single-ticket-counter">
+
+                            <button class="single-minus-btn" id="minus-btn">-</button>
+                            <p class="single-counter" id="counter">0</p>
+                            <button class="single-plus-btn" id="plus-btn">+</button>
+                        </div>
+                        <div>
+                            <p class="single-price" id="single-price">1.20 </p><span>€</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Buy multiple tickets -->
+                <div class="multi" id="multi-ticket">
+                    <img src="asset/img/logo6.avif" alt="ticket-logo">
+                    <div>
+                        <p class="multi-buy-title"> 10 Voyage Aix en Bus</p>
+                        <span> Valable 60 minutes sur Aix en Bus Multi-validable</span>
+                    </div>
+                    <div class="multi-ticket-counter-parent">
+                        <div class="multi-ticket-counter">
+                            <button class="multi-minus-btn" id="multi-minus-btn">-</button>
+                            <p class="multi-counter" id="multi-counter">0</p>
+                            <button class="multi-plus-btn" id="multi-plus-btn">+</button>
+
+                        </div>
+                        <div>
+                            <p class="multiple-price" id="multi-price">9.00 </p><span>€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Child Container -->
+            <div id="child-two">
+                <div id="total-container">
+                    <p id="total-tickets">Total:<span class="total"></span><span>€</span></p>
+                    <a id="select-buy" href="">Acheter (<span class="amount"></span>)</a>
+                </div>
+                <!-- Agree to terms and conditions and pay -->
+                <div id="terms-conditions"></div>
             </div>
         </div>
-
-
-
-
-
-        <div class="multi" id="single-ticket">
-            <img src="asset/img/logo6.avif" alt="">
-            <div>
-                <p class="single-buy"> 10 Voyage Aix en Bus</p>
-                <span> Valable 60 minutes sur Aix en Bus Multi-validable</span>
-            </div>
-            <div class="ticket-counter">
-                <button class="multi-minus-btn" id="minus-btn">-</button>
-                <p class="multi-counter" id="counter">0</p>
-                <button class="multi-plus-btn" id="plus-btn">+</button>
-
-                <p class="multiple-price" id="price">9.00 </p><span>€</span>
-            </div>
-        </div>
-
-
     </section>
+
+
     <script src="js/buy.js"></script>
     <script src="js/ticket-counter.js"></script>
 </body>
