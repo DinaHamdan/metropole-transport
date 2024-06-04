@@ -12,8 +12,9 @@
   flex-direction: column;
   justify-content: end;
 }
-#e-tickets #ticket-orange-bar p {
-  padding: 0.7em;
+#e-tickets #ticket-orange-bar h2 {
+  padding: 0.1em;
+  font-weight: 300;
 }
 #e-tickets #with-tickets {
   padding: 1em;

@@ -1,3 +1,23 @@
+#payment {
+  height: 100vh;
+  margin-top: 50px;
+}
+#payment #payment-orange-bar {
+  background-image: linear-gradient(to right, #e68332, #fe4800);
+  height: 70px;
+  color: whitesmoke;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+#payment #payment-orange-bar h2 {
+  padding: 0.1em;
+  font-weight: 300;
+}
+
 @media screen and (min-width: 400px) {
   #payment {
     display: none;

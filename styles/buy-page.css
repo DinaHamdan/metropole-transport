@@ -13,8 +13,9 @@
   flex-direction: column;
   justify-content: end;
 }
-#buy-tickets #buy-orange-bar p {
-  padding: 0.7em;
+#buy-tickets #buy-orange-bar h2 {
+  padding: 0.1em;
+  font-weight: 300;
 }
 #buy-tickets #buy-tickets-parent {
   gap: 350px;

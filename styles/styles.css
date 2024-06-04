@@ -57,8 +57,9 @@
   flex-direction: column;
   justify-content: end;
 }
-#e-tickets #ticket-orange-bar p {
-  padding: 0.7em;
+#e-tickets #ticket-orange-bar h2 {
+  padding: 0.1em;
+  font-weight: 300;
 }
 #e-tickets #with-tickets {
   padding: 1em;
@@ -158,8 +159,9 @@
   flex-direction: column;
   justify-content: end;
 }
-#buy-tickets #buy-orange-bar p {
-  padding: 0.7em;
+#buy-tickets #buy-orange-bar h2 {
+  padding: 0.1em;
+  font-weight: 300;
 }
 #buy-tickets #buy-tickets-parent {
   gap: 350px;
@@ -346,6 +348,26 @@
     display: none;
   }
 }
+#payment {
+  height: 100vh;
+  margin-top: 50px;
+}
+#payment #payment-orange-bar {
+  background-image: linear-gradient(to right, #e68332, #fe4800);
+  height: 70px;
+  color: whitesmoke;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+#payment #payment-orange-bar h2 {
+  padding: 0.1em;
+  font-weight: 300;
+}
+
 @media screen and (min-width: 400px) {
   #payment {
     display: none;
