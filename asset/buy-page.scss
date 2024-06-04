@@ -1,5 +1,4 @@
 #buy-tickets {
-    // border: 1px solid red;
     height: 100vh;
     margin-top: 50px;
 
@@ -21,13 +20,81 @@
     }
 
     #buy-tickets-parent {
-        border: 1px solid red;
-        display: flex;
-        flex-direction: column;
-        // justify-content: space-evenly;
+
+        //When no ticket are selected
         gap: 350px;
 
+        //When tickets are selected
+        //gap: 300px;
+
+        display: flex;
+        flex-direction: column;
+
+
+
+
+        #terms-conditions {
+            padding: 30px;
+
+            //When no tickets are selected
+            display: none;
+
+
+            #terms-conditions-container-one {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                gap: 40px;
+                height: 45px;
+                width: 90%;
+                border-bottom: 3px dotted rgba(104, 97, 97, 0.445);
+                font-weight: 600;
+
+            }
+
+            #terms-conditions-container-two {
+                padding: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                height: 70px;
+                width: 90%;
+                gap: 70px;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 0.7em;
+                margin-left: -20px;
+            }
+
+
+            #conditions {
+                width: 90%;
+                font-size: 0.6em;
+                font-weight: 600;
+
+                #terms:checked {
+                    accent-color: black;
+
+                }
+
+                a {
+                    color: rgba(25, 25, 219, 0.685);
+                }
+
+                a::after {
+                    color: rgba(25, 25, 219, 0.685);
+                }
+
+            }
+        }
+    }
+
+    #child-one {
+        //When ticket are selected
+        //display: none;
+
         #single-ticket {
+
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -98,6 +165,7 @@
 
         // Multiple tickets
         #multi-ticket {
+
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -122,6 +190,8 @@
         }
 
         .multi-ticket-counter-parent {
+
+
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -163,40 +233,44 @@
 
             }
         }
+    }
+}
 
-        #total-container {
-            border-top: 3px solid rgba(104, 97, 97, 0.568);
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-
-            #total-tickets {
-                margin-left: 150px;
-                font-weight: 200;
-
-                span {
-                    font-weight: 500;
-                }
+#child-two {
 
 
+    #total-container {
+        border-top: 3px solid rgba(104, 97, 97, 0.568);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
 
+        #total-tickets {
+            margin-left: 150px;
+            font-weight: 200;
+
+            span {
+                font-weight: 500;
             }
 
-            #select-buy {
-                background-color: #fe3b00;
-                border-radius: 10px;
-                display: inline-block;
-                height: 40px;
-                width: 90%;
-                text-align: center;
-                text-decoration: none;
-                color: white;
-                font-weight: 400;
-                padding-top: 10px;
 
-            }
+
+        }
+
+        #select-buy {
+            background-color: #fe3b00;
+            border-radius: 10px;
+            display: inline-block;
+            height: 40px;
+            width: 90%;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+            padding-top: 10px;
+
         }
     }
 }

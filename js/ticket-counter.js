@@ -22,6 +22,9 @@ minusBtn.addEventListener("click", () => {
         priceNumSingle = 1.20;
         singlePrice.innerHTML = priceNumSingle;
     }
+    // localStorage.setItem('singlePrix', JSON.stringify(singlePrice.innerHTML));
+    // localStorage.setItem('singleTicketSum', JSON.stringify(counter.innerHTML));
+
     //Counter for the ticket number
     countNum -= 1;
     counter.innerHTML = countNum;
@@ -48,6 +51,9 @@ plusBtn.addEventListener("click", () => {
         let roundPriceNumSingle = priceNumSingle.toFixed(2);
         singlePrice.innerHTML = roundPriceNumSingle;
     }
+    // localStorage.setItem('singlePrix', JSON.stringify(singlePrice.innerHTML));
+    // localStorage.setItem('singleTicketSum', JSON.stringify(counter.innerHTML));
+
 
 
 })
@@ -77,6 +83,9 @@ multiMinusBtn.addEventListener("click", () => {
         priceNumMultiple = 9.00;
         multiplePrice.innerHTML = priceNumMultiple;
     }
+    // localStorage.setItem('multPrix', JSON.stringify(multiplePrice.innerHTML));
+    // localStorage.setItem('multiTicketSum', JSON.stringify(multiCounter.innerHTML));
+
     //Counter for the ticket number
     multiCountNum -= 1;
     multiCounter.innerHTML = multiCountNum;
@@ -97,9 +106,33 @@ multiPlusBtn.addEventListener("click", () => {
     if (multiCountNum >= 2) {
         priceNumMultiple += 9.00;
         multiplePrice.innerHTML = priceNumMultiple;
-
     }
-
+    // localStorage.setItem('multPrix', JSON.stringify(multiplePrice.innerHTML));
+    // localStorage.setItem('multiTicketSum', JSON.stringify(multiCounter.innerHTML));
 
 
 });
+//let multiPrix = JSON.parse(localStorage.getItem('multPrix'));
+// let singlePrix = JSON.parse(localStorage.getItem('multPrix'));
+
+let totalAmount = document.querySelector('.amount');
+let totalTickets = document.querySelector('.total');
+//parse Numbers of the price
+let multiInteger = parseFloat(multiplePrice.innerHTML);
+let singleInteger = parseFloat(singlePrice.innerHTML);
+//Add them together
+amountSum = multiInteger + singleInteger;
+//Add them to inner html
+totalAmount.innerHTML = amountSum;
+
+
+//parse Numbers of the ticket
+let multiSumCounter = parseFloat(multiCounter.innerHTML);
+let sumCounter = parseFloat(counter.innerHTML);
+//Add them together
+ticketSum = multiSumCounter + sumCounter;
+//Add them to inner html
+totalTickets.innerHTML = ticketSum;
+
+
+let buyingSummary = document.querySelector('#buying-summary');

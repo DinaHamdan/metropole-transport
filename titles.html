@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métropole Mobilité</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <!-- Welcome Section -->
+    <section id="welcome-page">
+        <div id="desktop-only-container">
+            <img id="dinosaur" src="asset/img/logo3.avif" alt="Impossible-de-se-connecter">
+            <h1>Impossible de se connecter à Internet.</h1>
+            <p>Cette page ne peut pas s'afficher dans Google Chrome, car votre ordinateur n'est pas connecté à Internet.
+            </p>
+            <a class="detail-link" href="/">Détails</a>
+        </div>
+    </section>
+    <!-- Show e-tickets Section -->
+    <section id="e-tickets">
+
+        <div id="ticket-orange-bar">
+            <p>E-tickets</p>
+        </div>
+
+        <div id="with-tickets">
+            <h2 class="with-tickets-title">sur mon téléphone</h2>
+            <div id="with-tickets-container">
+                <!-- On click towards use tickets -->
+                <img src="asset/img/logo9.avif" alt="métropole-ticket">
+                <p> 1 Voyage Aix En bus </p>
+                <p>1 e-ticket disponible</p>
+            </div>
+        </div>
+
+        <div id="no-tickets">
+            <h2 class="no-tickets-title">Aucun titre à utiliser.</h2>
+            <p>Vous pouvez acheter des titres pour voyager sur le réseau</p>
+        </div>
+
+        <!-- On click towards buy page -->
+        <a id="buy-link" href="#buy-tickets"><img class="with-tickets-shop-cart" src="asset/img/logo3bis.avif"
+                alt="shop-cart-logo">Acheter des
+            titres</a>
+        <!-- Navigation -->
+        <!-- Figcaption shouldnt be the child of a element Need to change it -->
+        <div id="navigation">
+            <a href="">
+                <img src="asset/img/logo4.avif" alt="home-page-icon">
+                <figcaption>Accueil</figcaption>
+            </a>
+            <a href=""><img src="asset/img/logo5.avif" alt="time-table-icon">
+                <figcaption>Horaires</figcaption>
+            </a>
+            <a href=""><img src="asset/img/logo6.avif" alt="ticket-icon">
+                <figcaption class="orange-fig-caption">Mes titres</figcaption>
+            </a>
+            <a href=""><img src="asset/img/logo7.avif" alt="traffic-icon">
+                <figcaption>Infos trafic</figcaption>
+            </a>
+            <a href=""><img src="asset/img/logo8.avif" alt="menu-icon">
+                <figcaption>Menu</figcaption>
+            </a>
+        </div>
+    </section>
+    <!-- Buy tickets page -->
+    <section id="buy-tickets">
+        <!-- Orange bar  -->
+        <div id="buy-orange-bar">
+            <p>Acheter</p>
+            <!-- When we validate to pay this will be the title -->
+            <!-- <p>Paiement</p> -->
+        </div>
+        <!-- Parent container -->
+        <div id="buy-tickets-parent">
+
+            <!-- Terms and conditions when tickets are selected -->
+            <div id="terms-conditions">
+                <div id="terms-conditions-container-one">
+                    <p>Total de la commande: </p>
+                    <div> <span class="total"></span><span>€</span>
+                    </div>
+                </div>
+                <div id="terms-conditions-container-two">
+                    <p id="buying-summary">1 Voyage Aix en Bus </p>
+                    <div> <span class="total">x</span><span class="amount"></span><span>€</span></div>
+                </div>
+                <div id="conditions">
+                    <input required id="terms" name="terms" type="checkbox">
+                    <label for="terms">J'ai lu et j'accepte les <a href="">conditions générales de vente</a></label>
+                </div>
+            </div>
+
+            <!-- First Child container -->
+            <div id="child-one">
+                <!-- Buy Single Ticket -->
+                <div id="single-ticket">
+                    <img src="asset/img/logo6.avif" alt="ticket-logo">
+                    <div>
+                        <p class="single-buy-title"> 1 Voyage Aix en Bus</p>
+                        <span> Valable 60 minutes</span>
+                    </div>
+                    <div class="single-ticket-counter-parent">
+                        <div class="single-ticket-counter">
+
+                            <button class="single-minus-btn" id="minus-btn">-</button>
+                            <p class="single-counter" id="counter"></p>
+                            <button class="single-plus-btn" id="plus-btn">+</button>
+                        </div>
+                        <div>
+                            <p class="single-price" id="single-price"></p><span>€</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Buy multiple tickets -->
+                <div class="multi" id="multi-ticket">
+                    <img src="asset/img/logo6.avif" alt="ticket-logo">
+                    <div>
+                        <p class="multi-buy-title"> 10 Voyage Aix en Bus</p>
+                        <span> Valable 60 minutes sur Aix en Bus Multi-validable</span>
+                    </div>
+                    <div class="multi-ticket-counter-parent">
+                        <div class="multi-ticket-counter">
+                            <button class="multi-minus-btn" id="multi-minus-btn">-</button>
+                            <p class="multi-counter" id="multi-counter"></p>
+                            <button class="multi-plus-btn" id="multi-plus-btn">+</button>
+
+                        </div>
+                        <div>
+                            <p class="multiple-price" id="multi-price"></p><span>€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Child Container -->
+            <div id="child-two">
+                <div id="total-container">
+                    <p id="total-tickets">Total:<span class="amount"></span><span>€</span></p>
+                    <!-- <a id="select-buy" href="#terms-conditions">Acheter (<span class="total"></span>)</a> -->
+                    <a id="select-buy" href="#terms-conditions">Payer </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="payment">
+        <!-- Orange bar  -->
+        <div id="buy-orange-bar">
+            <p>Paiement</p>
+        </div>
+    </section>
+
+
+    <script src="js/buy.js"></script>
+    <script src="js/ticket-counter.js"></script>
+</body>
+
+</html>
