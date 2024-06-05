@@ -1,3 +1,58 @@
+#accepted {
+  height: 100vh;
+  margin-top: 50px;
+}
+#accepted #accepted-orange-bar {
+  background-image: linear-gradient(to right, #e68332, #fe4800);
+  height: 70px;
+  color: whitesmoke;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  gap: 90px;
+}
+#accepted #accepted-orange-bar .chevron {
+  width: 20px;
+  height: 20px;
+  margin: 0 0 10px -100px;
+}
+#accepted #accepted-orange-bar h2 {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1em;
+}
+#accepted #accepted-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-evenly;
+  text-align: center;
+}
+#accepted #accepted-container p {
+  padding: 30px;
+  font-size: 0.9em;
+  color: #7e7e7e;
+}
+#accepted #accepted-container #close-link {
+  background-color: #fe3b00;
+  border-radius: 10px;
+  display: inline-block;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding-top: 10px;
+  margin-top: 80px;
+}
+
 @media screen and (min-width: 400px) {
   #accepted {
     display: none;

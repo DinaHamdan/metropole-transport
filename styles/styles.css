@@ -67,16 +67,16 @@
 #e-tickets #ticket-orange-bar .more {
   width: 15px;
   height: 15px;
-  margin: 0 -100px 20px 0;
+  margin: 0 -100px 15px 0;
 }
 #e-tickets #with-tickets {
   padding: 1em;
-  display: none;
 }
 #e-tickets #with-tickets .with-tickets-title {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1em;
+  padding: 10px;
 }
 #e-tickets #with-tickets #with-tickets-container {
   display: flex;
@@ -92,20 +92,127 @@
   text-transform: uppercase;
 }
 #e-tickets #no-tickets {
-  margin: 200px 0 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 2em;
+  display: none;
 }
 #e-tickets #no-tickets .no-tickets-title {
   font-weight: 500;
   font-size: 1.5em;
   padding: 1em;
 }
-#e-tickets #buy-link {
+#e-tickets #selected-tickets {
+  display: none;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 50px;
+  flex-direction: column;
+  gap: 20px;
+}
+#e-tickets #selected-tickets .type-transport {
+  background-color: #f3f5f4;
+  border-radius: 10px;
+  height: 50px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+#e-tickets #selected-tickets .type-transport .correct {
+  width: 15px;
+  height: 15px;
+}
+#e-tickets #validation {
+  border: 1px solid black;
+  box-shadow: 10px 5px 5px #a89999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+#e-tickets #validation h3 {
+  text-align: center;
+  font-size: 1em;
+  padding: 10px;
+}
+#e-tickets #validation .date-container {
+  background-color: #e0e0e0;
+  height: 20px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 0.7em;
+  margin: 10px;
+}
+#e-tickets #validation .ongoing-validation {
+  padding: 10px;
+  border-top: 2px dotted #a89999;
+  border-bottom: 2px dotted #a89999;
+}
+#e-tickets #validation .ongoing-validation .validation-type {
+  font-weight: 600;
+}
+#e-tickets #validation .validation-container-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#e-tickets #validation .validation-container-two .info-container {
+  display: flex;
+}
+#e-tickets #validation .validation-container-two .info-container .info {
+  width: 15px;
+  height: 15px;
+}
+#e-tickets #validation .validation-container-two .info-container .correspondance {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+#e-tickets #validation .validation-container-two #control {
+  background-color: #d92e10;
+  border-radius: 10px;
+  display: inline-block;
+  height: 30px;
+  width: 300px;
+  padding-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+#e-tickets #validation .validation-container-two #correspondance {
+  background-color: #d92e10;
+  border-radius: 10px;
+  display: inline-block;
+  height: 30px;
+  width: 300px;
+  padding-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+#e-tickets #use-link {
+  background-color: #d92e10;
+  border-radius: 10px;
+  display: inline-block;
+  height: 40px;
+  width: 300px;
+  padding-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+#buy-link {
   background-color: #fe3b00;
   border-radius: 10px;
   display: inline-block;
@@ -116,14 +223,15 @@
   text-decoration: none;
   color: white;
   font-weight: 400;
-  margin: 0px 0 160px 40px;
+  margin: 220px 0 50px 40px;
 }
-#e-tickets #buy-link .with-tickets-shop-cart {
+#buy-link .with-tickets-shop-cart {
   width: 20px;
   height: 20px;
   margin: 5px 5px 0 0;
 }
-#e-tickets #navigation {
+
+#navigation {
   padding-top: 10px;
   display: flex;
   flex-direction: row;
@@ -132,18 +240,21 @@
   border-top: 2px solid rgba(104, 97, 97, 0.726);
   height: 50px;
 }
-#e-tickets #navigation a {
+#navigation a {
   font-size: 0.6em;
   color: rgba(104, 97, 97, 0.726);
   text-decoration: none;
 }
-#e-tickets #navigation a::after {
+
+#navigation a::after {
   color: rgba(104, 97, 97, 0.726);
 }
-#e-tickets .orange-fig-caption {
+
+.orange-fig-caption {
   color: #fe3b00;
 }
-#e-tickets .orange-fig-caption::after {
+
+.orange-fig-caption::after {
   color: #fe3b00;
 }
 
@@ -379,7 +490,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: end;
-  gap: 90px;
+  gap: 130px;
 }
 #payment #payment-orange-bar .chevron {
   width: 20px;
@@ -602,6 +713,61 @@
     display: none;
   }
 }
+#accepted {
+  height: 100vh;
+  margin-top: 50px;
+}
+#accepted #accepted-orange-bar {
+  background-image: linear-gradient(to right, #e68332, #fe4800);
+  height: 70px;
+  color: whitesmoke;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  gap: 90px;
+}
+#accepted #accepted-orange-bar .chevron {
+  width: 20px;
+  height: 20px;
+  margin: 0 0 10px -100px;
+}
+#accepted #accepted-orange-bar h2 {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1em;
+}
+#accepted #accepted-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-evenly;
+  text-align: center;
+}
+#accepted #accepted-container p {
+  padding: 30px;
+  font-size: 0.9em;
+  color: #7e7e7e;
+}
+#accepted #accepted-container #close-link {
+  background-color: #fe3b00;
+  border-radius: 10px;
+  display: inline-block;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding-top: 10px;
+  margin-top: 80px;
+}
+
 @media screen and (min-width: 400px) {
   #accepted {
     display: none;
