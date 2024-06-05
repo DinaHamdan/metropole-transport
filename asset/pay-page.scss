@@ -50,12 +50,11 @@
             background-color: white;
             color: #7e7e7e;
             font-weight: 600;
-
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 90px;
-            height: 50px;
+            height: 55px;
             width: 100%;
 
             .down-arrow {
@@ -67,47 +66,221 @@
         }
     }
 
-    .card-number {
-        border: 1px solid red;
-        color: #7e7e7e;
-        font-weight: 500;
-        margin-left: 25px;
-    }
+    form {
+        padding: 10px;
 
-    #card-info {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        justify-content: center;
-
-        #card {
-            width: 230px;
-            border-color: #7e7e7e9f;
-            background-color: #f1f1f1;
+        .card-label {
+            color: #7f7f7f;
+            font-weight: 500;
+            margin-left: 25px;
         }
 
-        .card-logo {
-            border-color: #7e7e7e;
-            width: 50px;
-            height: 30px;
-            margin-left: -70px;
-        }
+        #card-info {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+            // position: absolute;
 
-        details>summary {
-            list-style-type: none;
+            #card {
+                width: 230px;
+                border-color: #7e7e7e4f;
+                background-color: #f1f1f1;
+                border-radius: 5px;
+            }
+
+            .card-logo {
+                background-color: #f1f1f1;
+                border: 2px solid #7e7e7e4f;
+                border-radius: 5px;
+                width: 47px;
+                height: 35px;
+                margin-left: -20px;
+            }
 
             .question-mark {
-                border: 1px solid #7e7e7e9f;
+                margin-top: 5px;
+                border: 1px solid #7e7e7e;
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+                text-align: center;
+            }
+
+            .test-hide {
+                display: none;
             }
 
         }
 
-
-    }
-
-    @media screen and (min-width:400px) {
-        #payment {
+        #hidden-card-info {
             display: none;
+            font-size: 0.9 em;
+            color: #7e7e7e;
+            padding: 10px;
+            margin-left: 20px;
+            margin-top: -100px;
+            position: relative;
+            width: 80%;
+            border: 1px solid #7e7e7e9f;
+            box-shadow: 10px 5px 5px #a89999;
+            background-color: white;
+            text-justify: auto;
+
+            .close {
+                margin-left: 290px;
+            }
+
 
         }
+
+        .month-label-container {
+            margin-top: 20px;
+
+            #month-label {
+                color: #7f7f7f;
+                font-weight: 500;
+                margin-left: 25px;
+
+            }
+        }
+
+        #card-date-container {
+            display: flex;
+            justify-content: space-evenly;
+
+            #month {
+                width: 130px;
+                height: 40px;
+                border-color: #7e7e7e4f;
+                background-color: #f1f1f1;
+                border-radius: 5px;
+            }
+
+            #year {
+                width: 130px;
+                height: 40px;
+                border-color: #7e7e7e4f;
+                background-color: #f1f1f1;
+                border-radius: 5px;
+            }
+        }
+
+        .cvv-label-container {
+            margin-top: 20px;
+
+
+            #cvv-label {
+                color: #7f7f7f;
+                font-weight: 500;
+                margin-left: 25px;
+            }
+        }
+
+        #cvv-info {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: flex-start;
+            margin-left: 25px;
+
+
+            #cvv {
+                width: 70px;
+                height: 40px;
+                border-color: #7e7e7e4f;
+                background-color: #f1f1f1;
+                border-radius: 5px;
+            }
+
+
+            .question-mark {
+                margin-top: 5px;
+                border: 1px solid #7e7e7e;
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+                text-align: center;
+            }
+        }
+
+        #hidden-cvv-info {
+            display: none;
+            font-size: 0.9 em;
+            color: #7e7e7e;
+            padding: 10px;
+            margin-left: 20px;
+            margin-top: -100px;
+            position: relative;
+            width: 80%;
+            border: 1px solid #7e7e7e9f;
+            box-shadow: 10px 5px 5px #a89999;
+            background-color: white;
+            text-justify: auto;
+
+            .close {
+                margin-left: 270px;
+            }
+        }
+
+        #submit-button-container {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            #submit {
+                padding: 20px 0 30px 0;
+                width: 60%;
+                height: 40px;
+                color: white;
+                background-color: #3675ba;
+                border-radius: 5px;
+                text-transform: uppercase;
+            }
+        }
     }
+
+    #card-logo-container {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #footer-container {
+        background-color: #f5f5f5;
+        text-align: end;
+        font-size: 0.9em;
+        color: #201d1d9f;
+
+        p {
+            padding: 10px;
+        }
+
+        #pay-logo-container {
+            padding: 20px;
+            border-top: 1px solid #524e4e9f;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            font-size: 0.6em;
+
+            a {
+                margin-top: 10px;
+                font-size: 1.1em;
+                color: #201d1d9f;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width:400px) {
+    #payment {
+        display: none;
+
+    }
+}

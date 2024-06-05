@@ -48,7 +48,7 @@
   align-items: center;
   justify-content: center;
   gap: 90px;
-  height: 50px;
+  height: 55px;
   width: 100%;
 }
 #payment #logo-language-container #total-pay .down-arrow {
@@ -56,27 +56,177 @@
   height: 30px;
   margin-right: -50px;
 }
-#payment .card-number {
-  border: 1px solid red;
-  color: #7e7e7e;
+#payment form {
+  padding: 10px;
+}
+#payment form .card-label {
+  color: #7f7f7f;
   font-weight: 500;
   margin-left: 25px;
 }
-#payment #card-info {
+#payment form #card-info {
   display: flex;
   flex-direction: row;
   gap: 10px;
   justify-content: center;
 }
-#payment #card-info #card {
+#payment form #card-info #card {
   width: 230px;
-  border-color: rgba(126, 126, 126, 0.6235294118);
+  border-color: rgba(126, 126, 126, 0.3098039216);
   background-color: #f1f1f1;
+  border-radius: 5px;
 }
-#payment #card-info .card-logo {
-  border-color: #7e7e7e;
-  width: 50px;
-  height: 30px;
+#payment form #card-info .card-logo {
+  background-color: #f1f1f1;
+  border: 2px solid rgba(126, 126, 126, 0.3098039216);
+  border-radius: 5px;
+  width: 47px;
+  height: 35px;
+  margin-left: -20px;
+}
+#payment form #card-info .question-mark {
+  margin-top: 5px;
+  border: 1px solid #7e7e7e;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+#payment form #card-info .test-hide {
+  display: none;
+}
+#payment form #hidden-card-info {
+  display: none;
+  font-size: 0.9 em;
+  color: #7e7e7e;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: -100px;
+  position: relative;
+  width: 80%;
+  border: 1px solid rgba(126, 126, 126, 0.6235294118);
+  box-shadow: 10px 5px 5px #a89999;
+  background-color: white;
+  text-justify: auto;
+}
+#payment form #hidden-card-info .close {
+  margin-left: 290px;
+}
+#payment form .month-label-container {
+  margin-top: 20px;
+}
+#payment form .month-label-container #month-label {
+  color: #7f7f7f;
+  font-weight: 500;
+  margin-left: 25px;
+}
+#payment form #card-date-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+#payment form #card-date-container #month {
+  width: 130px;
+  height: 40px;
+  border-color: rgba(126, 126, 126, 0.3098039216);
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+#payment form #card-date-container #year {
+  width: 130px;
+  height: 40px;
+  border-color: rgba(126, 126, 126, 0.3098039216);
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+#payment form .cvv-label-container {
+  margin-top: 20px;
+}
+#payment form .cvv-label-container #cvv-label {
+  color: #7f7f7f;
+  font-weight: 500;
+  margin-left: 25px;
+}
+#payment form #cvv-info {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-left: 25px;
+}
+#payment form #cvv-info #cvv {
+  width: 70px;
+  height: 40px;
+  border-color: rgba(126, 126, 126, 0.3098039216);
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+#payment form #cvv-info .question-mark {
+  margin-top: 5px;
+  border: 1px solid #7e7e7e;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+#payment form #hidden-cvv-info {
+  display: none;
+  font-size: 0.9 em;
+  color: #7e7e7e;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: -100px;
+  position: relative;
+  width: 80%;
+  border: 1px solid rgba(126, 126, 126, 0.6235294118);
+  box-shadow: 10px 5px 5px #a89999;
+  background-color: white;
+  text-justify: auto;
+}
+#payment form #hidden-cvv-info .close {
+  margin-left: 270px;
+}
+#payment form #submit-button-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#payment form #submit-button-container #submit {
+  padding: 20px 0 30px 0;
+  width: 60%;
+  height: 40px;
+  color: white;
+  background-color: #3675ba;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+#payment #card-logo-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#payment #footer-container {
+  background-color: #f5f5f5;
+  text-align: end;
+  font-size: 0.9em;
+  color: rgba(32, 29, 29, 0.6235294118);
+}
+#payment #footer-container p {
+  padding: 10px;
+}
+#payment #footer-container #pay-logo-container {
+  padding: 20px;
+  border-top: 1px solid rgba(82, 78, 78, 0.6235294118);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-size: 0.6em;
+}
+#payment #footer-container #pay-logo-container a {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: rgba(32, 29, 29, 0.6235294118);
 }
 
 @media screen and (min-width: 400px) {
