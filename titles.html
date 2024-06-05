@@ -166,83 +166,91 @@
             <h2>Paiement</h2>
         </div>
         <div id="logo-language-container">
-            <img src="asset/img/logo17.avif" alt="metropole-logo">
+            <img class="metropole-logo" src="asset/img/logo17.avif" alt="metropole-logo">
 
-            <button>FR</button>
-        </div>
-        <div>
-            <p>Montant:1.20 EUR</p>
-        </div>
-
-        <form action="">
-            <label for="card">Numéro de carte</label>
-            <input id="card" name="card" type="text">
-
-            <details>
-                <summary>?</summary>
-                <div>
-                    <p>Une fois le numéro correctement renseign", la marque de votre carte bancaire apparaîtra. Si votre
-                        carte contient plusieurs marques, une marque apparaîtra par défaut et vous pourrez facielement
-                        modifier ce choix en cliquant sur la flèche.</p>
-                </div>
-
-            </details>
-
-            <div>
-                <label for="month">Expire fin</label>
-                <select id="month" name="month">
-                    <option selected>mois</option>
-                    <option>01-Janvier</option>
-                    <option>02-Février</option>
-                    <option>03-Mars</option>
-                    <option>04-Avril</option>
-                    <option>05-Mai</option>
-                    <option>06-Juin</option>
-                    <option>07-Juillet</option>
-                    <option>08-Aout</option>
-                    <option>09-Septembre</option>
-                    <option>10-Octobre</option>
-                    <option>11-Novembre</option>
-                    <option>12-Decembre</option>
-                </select>
-                <label for="year"></label>
-                <select id="year" name="year">
-
-                    <option selected>année</option>
-                    <option>2024</option>
-                    <option>2025</option>
-                    <option>2026</option>
-                    <option>2027</option>
-                    <option>2028</option>
-                    <option>2029</option>
-                    <option>2030</option>
-                </select>
+            <button id="language-button">FR</button>
+            <div id="total-pay">
+                <p>Montant : 1,20 EUR <span class="amount"></span></p>
+                <img class="down-arrow" src="asset/img/down-arrow.avif" alt="">
             </div>
-            <label for="cvv">Cryptogramme visuel</label>
-            <input id="cvv" name="cvv" type="text">
-            <details>
-                <summary>?</summary>
-                <div>
-                    <p>Ce champs est obligatoire uniquement pour les moyens de Paiement possédant un cryptogramme. Le
-                        cryptogramme visuel de la carte correspond aux 3 chiffres présent au verso de votre carte dans
-                        la zone de signature</p>
-                    <img src="asset/img/logo15.avif" alt="">
+        </div>
+
+        <div>
+            <form action="">
+                <label class="card-number" for="card">Numéro de carte</label>
+                <div id="card-info">
+                    <input id="card" name="card" type="text">
+                    <img class="card-logo" src="asset/img/card.avif" alt="card-logo">
+                    <details>
+                        <summary class="question-mark">?</summary>
+                        <div>
+                            <p>Une fois le numéro correctement renseign", la marque de votre carte bancaire apparaîtra.
+                                Si votre
+                                carte contient plusieurs marques, une marque apparaîtra par défaut et vous pourrez
+                                facielement
+                                modifier ce choix en cliquant sur la flèche.</p>
+                        </div>
+
+                    </details>
                 </div>
 
-            </details>
-            <input type="submit" value="Valider">
-        </form>
-        <div>
-            <img src="asset/img/logo10.avif" alt="">
-            <img src="asset/img/logo11.avif" alt="">
-            <img src="asset/img/logo12.avif" alt="">
-        </div>
+                <div>
+                    <label for="month">Expire fin</label>
+                    <select id="month" name="month">
+                        <option selected>mois</option>
+                        <option>01-Janvier</option>
+                        <option>02-Février</option>
+                        <option>03-Mars</option>
+                        <option>04-Avril</option>
+                        <option>05-Mai</option>
+                        <option>06-Juin</option>
+                        <option>07-Juillet</option>
+                        <option>08-Aout</option>
+                        <option>09-Septembre</option>
+                        <option>10-Octobre</option>
+                        <option>11-Novembre</option>
+                        <option>12-Decembre</option>
+                    </select>
+                    <label for="year"></label>
+                    <select id="year" name="year">
 
-        <p>Annuler et retourne à la boutique</p>
-        <div>
-            <img src="asset/img/logo13.avif" alt="">
-            <img src="asset/img/logo14.avif" alt="">
-        </div>
+                        <option selected>année</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                        <option>2027</option>
+                        <option>2028</option>
+                        <option>2029</option>
+                        <option>2030</option>
+                    </select>
+                </div>
+                <label for="cvv">Cryptogramme visuel</label>
+                <input id="cvv" name="cvv" type="text">
+                <details>
+                    <summary>?</summary>
+                    <div>
+                        <p>Ce champs est obligatoire uniquement pour les moyens de Paiement possédant un cryptogramme.
+                            Le
+                            cryptogramme visuel de la carte correspond aux 3 chiffres présent au verso de votre carte
+                            dans
+                            la zone de signature</p>
+                        <img src="asset/img/logo15.avif" alt="">
+                    </div>
+
+                </details>
+                <input type="submit" value="Valider">
+            </form>
+            <div>
+                <img src="asset/img/logo10.avif" alt="">
+                <img src="asset/img/logo11.avif" alt="">
+                <img src="asset/img/logo12.avif" alt="">
+            </div>
+
+            <p>Annuler et retourne à la boutique</p>
+            <div>
+                <img src="asset/img/logo13.avif" alt="">
+                <img src="asset/img/logo14.avif" alt="">
+            </div>
     </section>
 
     <section id="accepted">

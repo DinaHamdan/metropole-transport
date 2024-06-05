@@ -378,8 +378,59 @@
   padding: 0.1em;
   font-weight: 300;
 }
-#payment #payment-orange-bar .logo-language-container {
+#payment #logo-language-container {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  background-color: #f5f5f5;
+}
+#payment #logo-language-container #language-button {
+  background-color: #424242;
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-weight: 200;
+}
+#payment #logo-language-container #total-pay {
+  background-color: white;
+  color: #7e7e7e;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  height: 50px;
+  width: 100%;
+}
+#payment #logo-language-container #total-pay .down-arrow {
+  width: 30px;
+  height: 30px;
+  margin-right: -50px;
+}
+#payment .card-number {
   border: 1px solid red;
+  color: #7e7e7e;
+  font-weight: 500;
+  margin-left: 25px;
+}
+#payment #card-info {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+#payment #card-info #card {
+  width: 230px;
+  border-color: rgba(126, 126, 126, 0.6235294118);
+  background-color: #f1f1f1;
+}
+#payment #card-info .card-logo {
+  border-color: #7e7e7e;
+  width: 50px;
+  height: 30px;
 }
 
 @media screen and (min-width: 400px) {
