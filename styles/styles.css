@@ -53,9 +53,6 @@
   font-size: 1.2em;
   font-weight: 400;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
 }
 #e-tickets #ticket-orange-bar h2 {
   padding: 0.1em;
@@ -156,8 +153,15 @@
   font-weight: 400;
   text-align: center;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  gap: 90px;
+}
+#buy-tickets #buy-orange-bar .cross {
+  width: 15px;
+  height: 15px;
+  margin: 0 0 10px -100px;
 }
 #buy-tickets #buy-orange-bar h2 {
   padding: 0.1em;
@@ -360,16 +364,31 @@
   font-weight: 400;
   text-align: center;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  gap: 90px;
+}
+#payment #payment-orange-bar .chevron {
+  width: 20px;
+  height: 20px;
+  margin: 0 0 10px -100px;
 }
 #payment #payment-orange-bar h2 {
   padding: 0.1em;
   font-weight: 300;
 }
+#payment #payment-orange-bar .logo-language-container {
+  border: 1px solid red;
+}
 
 @media screen and (min-width: 400px) {
   #payment {
+    display: none;
+  }
+}
+@media screen and (min-width: 400px) {
+  #accepted {
     display: none;
   }
 }

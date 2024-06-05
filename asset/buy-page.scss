@@ -10,8 +10,22 @@
         font-weight: 400;
         text-align: center;
         display: flex;
-        flex-direction: column;
-        justify-content: end;
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+        gap: 90px;
+
+        // .chevron {
+        //     width: 20px;
+        //     height: 20px;
+        //     margin: 0 0 10px -100px;
+        // }
+
+        .cross {
+            width: 15px;
+            height: 15px;
+            margin: 0 0 10px -100px;
+        }
 
         h2 {
             padding: 0.1em;

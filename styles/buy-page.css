@@ -10,8 +10,15 @@
   font-weight: 400;
   text-align: center;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  gap: 90px;
+}
+#buy-tickets #buy-orange-bar .cross {
+  width: 15px;
+  height: 15px;
+  margin: 0 0 10px -100px;
 }
 #buy-tickets #buy-orange-bar h2 {
   padding: 0.1em;
