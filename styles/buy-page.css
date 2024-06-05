@@ -21,8 +21,9 @@
   margin: 0 0 10px -100px;
 }
 #buy-tickets #buy-orange-bar h2 {
-  padding: 0.1em;
-  font-weight: 300;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1em;
 }
 #buy-tickets #buy-tickets-parent {
   gap: 350px;

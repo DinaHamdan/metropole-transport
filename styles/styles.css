@@ -53,10 +53,21 @@
   font-size: 1.2em;
   font-weight: 400;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  gap: 90px;
 }
 #e-tickets #ticket-orange-bar h2 {
-  padding: 0.1em;
-  font-weight: 300;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1em;
+}
+#e-tickets #ticket-orange-bar .more {
+  width: 15px;
+  height: 15px;
+  margin: 0 -100px 20px 0;
 }
 #e-tickets #with-tickets {
   padding: 1em;
@@ -164,8 +175,9 @@
   margin: 0 0 10px -100px;
 }
 #buy-tickets #buy-orange-bar h2 {
-  padding: 0.1em;
-  font-weight: 300;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1em;
 }
 #buy-tickets #buy-tickets-parent {
   gap: 350px;
@@ -359,7 +371,6 @@
 #payment #payment-orange-bar {
   background-image: linear-gradient(to right, #e68332, #fe4800);
   height: 70px;
-  width: 100%;
   color: whitesmoke;
   font-size: 1.2em;
   font-weight: 400;
@@ -376,8 +387,9 @@
   margin: 0 0 10px -100px;
 }
 #payment #payment-orange-bar h2 {
-  padding: 0.1em;
-  font-weight: 300;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1em;
 }
 #payment #logo-language-container {
   padding: 10px;
@@ -385,7 +397,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-  gap: 20px;
+  gap: 90px;
   background-color: #f5f5f5;
 }
 #payment #logo-language-container #language-button {
@@ -395,8 +407,9 @@
   color: white;
   font-weight: 200;
 }
-#payment #logo-language-container #total-pay {
+#payment #total-pay {
   background-color: white;
+  border-bottom: 10px solid #f5f5f5;
   color: #7e7e7e;
   font-weight: 600;
   display: flex;
@@ -406,7 +419,7 @@
   height: 55px;
   width: 100%;
 }
-#payment #logo-language-container #total-pay .down-arrow {
+#payment #total-pay .down-arrow {
   width: 30px;
   height: 30px;
   margin-right: -50px;

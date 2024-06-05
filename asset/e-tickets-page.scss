@@ -3,18 +3,38 @@
     height: 100vh;
 
     #ticket-orange-bar {
+        // background-image: linear-gradient(to right, #e68332, #fe4800);
+        // height: 70px;
+        // color: whitesmoke;
+        // font-size: 1.2em;
+        // font-weight: 400;
+        // text-align: center;
+
         background-image: linear-gradient(to right, #e68332, #fe4800);
         height: 70px;
         color: whitesmoke;
         font-size: 1.2em;
         font-weight: 400;
         text-align: center;
-   
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+        gap: 90px;
+
 
         h2 {
-            padding: 0.1em;
-            font-weight: 300;
+            padding: 10px;
+            font-weight: 500;
+            font-size: 1em;
         }
+
+        .more {
+            width: 15px;
+            height: 15px;
+            margin: 0 -100px 15px 0;
+        }
+
 
     }
 
