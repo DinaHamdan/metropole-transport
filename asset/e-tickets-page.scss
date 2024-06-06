@@ -40,7 +40,7 @@
     #with-tickets {
         padding: 1em;
         //    When no tickets are bought display none
-        // display: none;
+        display: none;
 
         .with-tickets-title {
             text-transform: uppercase;
@@ -118,7 +118,7 @@
         //border: 1px solid red;
 
         //When tickets are bought
-        display: none;
+        //display: none;
 
         .no-tickets-title {
             font-weight: 500;
@@ -131,14 +131,15 @@
 
     //When tickets are selected general background color is #929292;
     #selected-tickets {
-        //When no tickets are selected
+        //When tickets are NOT BOUGHT OR NOT selected
         display: none;
+        //When  tickets are bought  AND SELECTED  
+        //display: flex;
 
         background-color: #ffffff;
         border: 1px solid black;
         border-radius: 10px;
         padding: 50px;
-        // display: flex;
         flex-direction: column;
         gap: 20px;
 
@@ -164,10 +165,10 @@
 
     #validation {
         //when no tickets are selected
-        //display: none;
+        display: none;
 
-        //when tickets are selected and validated background color is #f4f5f7;
-        display: flex;
+        //when tickets are bought selected and validated background color is #f4f5f7;
+        //display: flex;
 
         border: 2px solid #a89999;
         box-shadow: 10px 5px 5px #a89999;
@@ -293,7 +294,7 @@
     display: none;
 
     //When tickets need to be bought
-    // display: inline-block;
+    display: inline-block;
     background-color: #fe3b00;
     border-radius: 10px;
 
@@ -302,10 +303,10 @@
     width: 80%;
 
     //When no tickets are bought
-    //padding-top: 10px;
+    padding-top: 10px;
 
     //When  tickets are bought
-    padding-top: 10px;
+    //padding-top: 10px;
 
     text-align: center;
     text-decoration: none;
@@ -313,19 +314,19 @@
     font-weight: 400;
 
     //When no tickets are bought
-    //margin: 0px 0 160px 40px;
+    margin: 0px 0 160px 40px;
 
     //When  tickets are bought
     margin: 220px 0 50px 40px;
 
     .with-tickets-shop-cart {
         //When no tickets are bought:
-        //display: none;
+        display: none;
 
         //When tickets are bought:
-        width: 20px;
-        height: 20px;
-        margin: 5px 5px 0 0;
+        // width: 20px;
+        // height: 20px;
+        // margin: 5px 5px 0 0;
 
     }
 }
@@ -335,7 +336,7 @@
     display: none;
 
     //When tickets need to be bought
-    //display: flex;
+    display: flex;
     padding-top: 10px;
 
     flex-direction: row;

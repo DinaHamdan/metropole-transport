@@ -1,4 +1,6 @@
 #buy-tickets {
+    //When we have bought anythig yet
+    display: none;
     height: 100vh;
     margin-top: 50px;
 
@@ -38,10 +40,10 @@
     #buy-tickets-parent {
 
         //When no ticket are selected
-        gap: 350px;
+        //gap: 350px;
 
         //When tickets are selected
-        //gap: 300px;
+        gap: 300px;
 
         display: flex;
         flex-direction: column;
@@ -53,7 +55,7 @@
             padding: 30px;
 
             //When no tickets are selected
-            display: none;
+            //display: none;
 
 
             #terms-conditions-container-one {

@@ -1,4 +1,5 @@
 #buy-tickets {
+  display: none;
   height: 100vh;
   margin-top: 50px;
 }
@@ -26,13 +27,12 @@
   font-size: 1em;
 }
 #buy-tickets #buy-tickets-parent {
-  gap: 350px;
+  gap: 300px;
   display: flex;
   flex-direction: column;
 }
 #buy-tickets #buy-tickets-parent #terms-conditions {
   padding: 30px;
-  display: none;
 }
 #buy-tickets #buy-tickets-parent #terms-conditions #terms-conditions-container-one {
   display: flex;

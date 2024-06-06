@@ -31,6 +31,7 @@
 }
 #e-tickets #with-tickets {
   padding: 1em;
+  display: none;
 }
 #e-tickets #with-tickets .with-tickets-title {
   text-transform: uppercase;
@@ -89,7 +90,6 @@
   justify-content: center;
   text-align: center;
   padding: 2em;
-  display: none;
 }
 #e-tickets #no-tickets .no-tickets-title {
   font-weight: 500;
@@ -120,7 +120,7 @@
   height: 15px;
 }
 #e-tickets #validation {
-  display: flex;
+  display: none;
   border: 2px solid #a89999;
   box-shadow: 10px 5px 5px #a89999;
   flex-direction: column;
@@ -223,6 +223,7 @@
 
 #buy-link {
   display: none;
+  display: inline-block;
   background-color: #fe3b00;
   border-radius: 10px;
   height: 40px;
@@ -232,16 +233,16 @@
   text-decoration: none;
   color: white;
   font-weight: 400;
+  margin: 0px 0 160px 40px;
   margin: 220px 0 50px 40px;
 }
 #buy-link .with-tickets-shop-cart {
-  width: 20px;
-  height: 20px;
-  margin: 5px 5px 0 0;
+  display: none;
 }
 
 #navigation {
   display: none;
+  display: flex;
   padding-top: 10px;
   flex-direction: row;
   justify-content: space-evenly;

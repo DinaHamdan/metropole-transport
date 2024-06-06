@@ -1,4 +1,5 @@
 #control {
+  display: none;
   height: 100vh;
 }
 #control #control-orange-bar {
