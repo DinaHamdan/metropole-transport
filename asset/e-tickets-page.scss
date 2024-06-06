@@ -1,5 +1,4 @@
 #e-tickets {
-
     height: 100vh;
 
     #ticket-orange-bar {
@@ -47,12 +46,14 @@
             font-weight: 500;
             font-size: 1em;
             padding: 10px;
+            margin: 20px;
 
 
         }
 
         .validation-title-container {
-            display: flex;
+            display: none;
+            //display: flex;
             justify-content: center;
             gap: 5px;
 
@@ -60,6 +61,7 @@
                 text-transform: lowercase;
                 color: #586b8d;
                 font-size: 1em;
+
             }
 
             #hour-glass {
@@ -73,11 +75,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 1.5em;
+            //padding: 1.5em;
 
             #countdown-container {
-                //
+                //when nothing is selected
                 display: none;
+
                 width: 283px;
                 height: 70px;
                 border-radius: 0 0 20px 20px;
@@ -137,11 +140,11 @@
         display: none;
         //When  tickets are bought  AND SELECTED  
         //display: flex;
-
         background-color: #ffffff;
-        border: 1px solid black;
         border-radius: 10px;
-        padding: 50px;
+        margin-top: 100px;
+        height: 50%;
+        padding: 20px;
         flex-direction: column;
         gap: 20px;
 
@@ -174,7 +177,7 @@
 
         border: 2px solid #a89999;
         box-shadow: 10px 5px 5px #a89999;
-
+        background-color: white;
         flex-direction: column;
         justify-content: space-between;
         gap: 20px;
@@ -247,7 +250,7 @@
                 }
             }
 
-            #control {
+            #control-link {
                 background-color: #d92e10;
                 border-radius: 10px;
                 display: inline-block;
@@ -258,6 +261,9 @@
                 text-decoration: none;
                 color: white;
                 font-weight: 400;
+                border: none;
+                width: 80%;
+                padding: 10px;
             }
 
             #correspondance {
@@ -271,6 +277,10 @@
                 text-decoration: none;
                 color: white;
                 font-weight: 400;
+                border: none;
+                width: 80%;
+                padding: 10px;
+
             }
         }
     }
@@ -287,6 +297,8 @@
         text-decoration: none;
         color: white;
         font-weight: 400;
+        border: none;
+        width: 80%;
 
     }
 }
@@ -316,19 +328,19 @@
     font-weight: 400;
 
     //When no tickets are bought
-    margin: 0px 0 160px 40px;
+    // margin: 0px 0 160px 40px;
 
     //When  tickets are bought
-    margin: 220px 0 50px 40px;
+    margin: 150px 0 50px 40px;
 
     .with-tickets-shop-cart {
         //When no tickets are bought:
         display: none;
 
         //When tickets are bought:
-        // width: 20px;
-        // height: 20px;
-        // margin: 5px 5px 0 0;
+        width: 20px;
+        height: 20px;
+        margin: 5px 5px 0 0;
 
     }
 }

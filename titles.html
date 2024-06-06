@@ -38,7 +38,7 @@
 
         <div id="with-tickets">
             <!-- When we are burying tickets -->
-            <!-- <h2 class="with-tickets-title">sur mon téléphone</h2> -->
+            <h2 class="with-tickets-title">sur mon téléphone</h2>
             <!-- When we are validating tickets -->
             <div class="validation-title-container">
                 <h2 class="validation-title">En cours d'utilisation</h2>
@@ -46,7 +46,7 @@
             </div>
             <div id="with-tickets-container">
                 <!-- On click towards use tickets -->
-                <img src="asset/img/logo9.avif" alt="métropole-ticket">
+                <img id="selected-ticket" src="asset/img/logo9.avif" alt="métropole-ticket">
 
                 <!-- When validated -->
                 <div id="countdown-container">
@@ -78,7 +78,7 @@
                 <p>le Bus</p>
                 <img class="correct" src="asset/img/correct.avif" alt="">
             </div>
-            <a id="use-link" href="">Utiliser</a>
+            <button id="use-link">Utiliser</button>
         </div>
 
         <!-- Select using options -->
@@ -106,8 +106,8 @@
                     <img class="info" src="asset/img/correct.avif" alt="">
                     <p class="correspondance">Correspondance,accès au Métro, Contrôle</p>
                 </div>
-                <a id="control" href="">Métro ou Contrôle</a>
-                <a id="correspondance" href="">Correspondance</a>
+                <button id="control-link" href="">Métro ou Contrôle</button>
+                <button id="correspondance" href="">Correspondance</button>
             </div>
 
         </div>
@@ -407,12 +407,15 @@
             <img src="asset/img/logo16.avif" alt="accepted-logo">
             <h3>Paiement accepté</h3>
             <p>Retrouvez vos titres dans votre compte et utilisez-les pour voyager facielement</p>
-            <a id="close-link" href="">Fermer</a>
+            <button id="close-link" href="">Fermer</button>
         </div>
     </section>
+
+    <script src="js/closeRedirect.js"></script>
+    <script src="js/control.js"></script>
     <script src="js/buy.js"></script>
     <script src="js/pay.js"></script>
-    <script src="js/closeRedirect.js"></script>
+    <script src="js/use.js"></script>
     <script src="js/ticket-counter.js"></script>
     <script src="js/timer.js"></script>
 
