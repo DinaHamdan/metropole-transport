@@ -1,7 +1,6 @@
 #accepted {
   display: none;
   height: 100vh;
-  margin-top: 50px;
 }
 #accepted #accepted-orange-bar {
   background-image: linear-gradient(to right, #e68332, #fe4800);

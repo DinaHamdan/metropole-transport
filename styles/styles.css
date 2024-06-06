@@ -106,6 +106,7 @@
   padding: 1.5em;
 }
 #e-tickets #with-tickets #with-tickets-container #countdown-container {
+  display: none;
   width: 283px;
   height: 70px;
   border-radius: 0 0 20px 20px;
@@ -294,6 +295,7 @@
   align-items: flex-end;
   border-top: 2px solid rgba(104, 97, 97, 0.726);
   height: 50px;
+  margin-top: 100px;
 }
 #navigation a {
   font-size: 0.6em;
@@ -321,7 +323,6 @@
 #buy-tickets {
   display: none;
   height: 100vh;
-  margin-top: 50px;
 }
 #buy-tickets #buy-orange-bar {
   background-image: linear-gradient(to right, #e68332, #fe4800);
@@ -347,7 +348,7 @@
   font-size: 1em;
 }
 #buy-tickets #buy-tickets-parent {
-  gap: 350px;
+  gap: 300px;
   display: flex;
   flex-direction: column;
 }
@@ -498,6 +499,9 @@
   border-radius: 5px;
 }
 
+#child-two {
+  display: none;
+}
 #child-two #total-container {
   border-top: 3px solid rgba(104, 97, 97, 0.568);
   padding: 20px;
@@ -534,7 +538,6 @@
 #payment {
   display: none;
   height: 100vh;
-  margin-top: 50px;
 }
 #payment #payment-orange-bar {
   background-image: linear-gradient(to right, #e68332, #fe4800);
@@ -547,7 +550,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: end;
-  gap: 130px;
+  gap: 100px;
 }
 #payment #payment-orange-bar .chevron {
   width: 20px;
@@ -759,9 +762,13 @@
   flex-wrap: wrap;
   font-size: 0.6em;
 }
+#payment #footer-container #pay-logo-container img {
+  width: 120px;
+  height: 70px;
+}
 #payment #footer-container #pay-logo-container a {
   margin-top: 10px;
-  font-size: 1.1em;
+  font-size: 1em;
   color: rgba(32, 29, 29, 0.6235294118);
 }
 
@@ -773,7 +780,6 @@
 #accepted {
   display: none;
   height: 100vh;
-  margin-top: 50px;
 }
 #accepted #accepted-orange-bar {
   background-image: linear-gradient(to right, #e68332, #fe4800);

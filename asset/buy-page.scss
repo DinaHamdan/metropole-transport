@@ -2,7 +2,7 @@
     //When we have bought anythig yet
     display: none;
     height: 100vh;
-    margin-top: 50px;
+    //margin-top: 50px;
 
     #buy-orange-bar {
         background-image: linear-gradient(to right, #e68332, #fe4800);
@@ -55,7 +55,7 @@
             padding: 30px;
 
             //When no tickets are selected
-            //display: none;
+            display: none;
 
 
             #terms-conditions-container-one {
@@ -255,7 +255,7 @@
 }
 
 #child-two {
-
+    display: none;
 
     #total-container {
         border-top: 3px solid rgba(104, 97, 97, 0.568);
@@ -290,7 +290,10 @@
             padding-top: 10px;
 
         }
+
+
     }
+
 }
 
 @media screen and (min-width:400px) {

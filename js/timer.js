@@ -3,7 +3,7 @@ const eventDate = new Date().getTime() + 1000 * 60 * 60;        // date of the E
 const timer = setInterval(() => {
     const actualTime = new Date().getTime();
     const difference = eventDate - actualTime;
-    console.log(difference);
+    // console.log(difference);
 
     const minutes = difference % (1000 * 60 * 60) / (1000 * 60);
     const seconds = difference % (1000 * 60) / 1000;
@@ -54,5 +54,3 @@ const timer = setInterval(() => {
         clearInterval(timer);
     }
 }, 200);
-
-// Write a function which will countdown one hour from enter the website.

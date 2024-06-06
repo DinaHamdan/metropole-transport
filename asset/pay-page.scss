@@ -1,9 +1,7 @@
 #payment {
     //Nothing is paid yet
     display: none;
-    
     height: 100vh;
-    margin-top: 50px;
 
     #payment-orange-bar {
         background-image: linear-gradient(to right, #e68332, #fe4800);
@@ -16,7 +14,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: end;
-        gap: 130px;
+        gap: 100px;
 
 
         .chevron {
@@ -272,9 +270,14 @@
             flex-wrap: wrap;
             font-size: 0.6em;
 
+            img {
+                width: 120px;
+                height: 70px;
+            }
+
             a {
                 margin-top: 10px;
-                font-size: 1.1em;
+                font-size: 1em;
                 color: #201d1d9f;
             }
         }

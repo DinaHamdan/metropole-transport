@@ -76,6 +76,8 @@
             padding: 1.5em;
 
             #countdown-container {
+                //
+                display: none;
                 width: 283px;
                 height: 70px;
                 border-radius: 0 0 20px 20px;
@@ -344,6 +346,7 @@
     align-items: flex-end;
     border-top: 2px solid rgba(104, 97, 97, 0.726);
     height: 50px;
+    margin-top: 100px;
 
     a {
         font-size: 0.6em;

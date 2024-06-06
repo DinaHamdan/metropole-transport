@@ -1,7 +1,6 @@
 #buy-tickets {
   display: none;
   height: 100vh;
-  margin-top: 50px;
 }
 #buy-tickets #buy-orange-bar {
   background-image: linear-gradient(to right, #e68332, #fe4800);
@@ -33,6 +32,7 @@
 }
 #buy-tickets #buy-tickets-parent #terms-conditions {
   padding: 30px;
+  display: none;
 }
 #buy-tickets #buy-tickets-parent #terms-conditions #terms-conditions-container-one {
   display: flex;
@@ -177,6 +177,9 @@
   border-radius: 5px;
 }
 
+#child-two {
+  display: none;
+}
 #child-two #total-container {
   border-top: 3px solid rgba(104, 97, 97, 0.568);
   padding: 20px;

@@ -1,7 +1,6 @@
 #payment {
   display: none;
   height: 100vh;
-  margin-top: 50px;
 }
 #payment #payment-orange-bar {
   background-image: linear-gradient(to right, #e68332, #fe4800);
@@ -14,7 +13,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: end;
-  gap: 130px;
+  gap: 100px;
 }
 #payment #payment-orange-bar .chevron {
   width: 20px;
@@ -226,9 +225,13 @@
   flex-wrap: wrap;
   font-size: 0.6em;
 }
+#payment #footer-container #pay-logo-container img {
+  width: 120px;
+  height: 70px;
+}
 #payment #footer-container #pay-logo-container a {
   margin-top: 10px;
-  font-size: 1.1em;
+  font-size: 1em;
   color: rgba(32, 29, 29, 0.6235294118);
 }
 
