@@ -267,9 +267,9 @@
 }
 
 #buy-link {
+  display: none;
   background-color: #fe3b00;
   border-radius: 10px;
-  display: inline-block;
   height: 40px;
   width: 80%;
   padding-top: 10px;
@@ -286,8 +286,8 @@
 }
 
 #navigation {
+  display: none;
   padding-top: 10px;
-  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-end;
@@ -824,6 +824,88 @@
 
 @media screen and (min-width: 400px) {
   #accepted {
+    display: none;
+  }
+}
+#control {
+  height: 100vh;
+}
+#control #control-orange-bar {
+  background-image: linear-gradient(to right, #e68332, #fe4800);
+  height: 70px;
+  color: whitesmoke;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  gap: 20px;
+}
+#control #control-orange-bar .cross {
+  width: 15px;
+  height: 15px;
+  margin: 0 0 15px 0;
+}
+#control #control-orange-bar h2 {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+#control #control-parent-container-one {
+  display: none;
+}
+#control #control-parent-container-one .control-nb-container {
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  width: 25px;
+  height: 10px;
+  border-radius: 50%;
+  font-weight: 600;
+  margin: 15px 15px 15px 0;
+}
+#control #control-parent-container-one div {
+  display: flex;
+  justify-content: space-evenly;
+  border: 0.5px solid rgba(0, 0, 0, 0.26);
+  padding: 10px;
+  font-weight: 500;
+  font-size: 0.9em;
+  text-justify: auto;
+}
+#control #control-parent-container-two #control-child-container-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+#control #control-parent-container-two #control-child-container-one #qr-img {
+  margin-bottom: 20px;
+}
+#control #control-parent-container-two #control-child-container-one p {
+  color: #7e7e7e;
+  font-style: italic;
+}
+#control #control-parent-container-two #control-child-container-two {
+  border-top: 2px solid rgba(126, 126, 126, 0.7254901961);
+  font-weight: 600;
+  padding: 10px;
+}
+#control #control-parent-container-two #control-child-container-two p {
+  padding: 5px;
+}
+#control #control-parent-container-two #control-child-container-two .control-uppercase {
+  text-transform: uppercase;
+}
+#control #control-parent-container-two #control-child-container-two span {
+  font-size: 0.5em;
+  color: #7e7e7e;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 400px) {
+  #control {
     display: none;
   }
 }

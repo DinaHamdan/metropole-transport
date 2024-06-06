@@ -1,0 +1,106 @@
+#control {
+
+    height: 100vh;
+
+    #control-orange-bar {
+
+        background-image: linear-gradient(to right, #e68332, #fe4800);
+        height: 70px;
+        color: whitesmoke;
+        font-size: 1.2em;
+        font-weight: 400;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+        gap: 20px;
+
+        .cross {
+            width: 15px;
+            height: 15px;
+            margin: 0 0 15px 0;
+        }
+
+        h2 {
+            padding: 10px;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+
+
+
+    }
+
+    #control-parent-container-one {
+        display: none;
+
+        .control-nb-container {
+            border: 1px solid rgba(0, 0, 0, 0.26);
+            width: 25px;
+            height: 10px;
+            border-radius: 50%;
+            font-weight: 600;
+            margin: 15px 15px 15px 0;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-evenly;
+            border: 0.5px solid rgba(0, 0, 0, 0.26);
+            padding: 10px;
+            font-weight: 500;
+            font-size: 0.9em;
+            text-justify: auto;
+        }
+    }
+
+
+    #control-parent-container-two {
+
+        #control-child-container-one {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+
+            #qr-img {
+                margin-bottom: 20px;
+
+            }
+
+            p {
+                color: #7e7e7e;
+                font-style: italic;
+            }
+        }
+
+        #control-child-container-two {
+            border-top: 2px solid #7e7e7eb9;
+            font-weight: 600;
+            padding: 10px;
+
+            p {
+                padding: 5px;
+            }
+
+            .control-uppercase {
+                text-transform: uppercase;
+            }
+
+            span {
+                font-size: 0.5em;
+                color: #7e7e7e;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:400px) {
+    #control {
+        display: none;
+
+    }
+}
