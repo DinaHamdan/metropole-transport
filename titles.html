@@ -27,17 +27,44 @@
     <section id="e-tickets">
 
         <div id="ticket-orange-bar">
-            <h2>E-tickets</h2>
-            <img class="more" src="asset/img/more.avif" alt="show-more-logo">
+            <!-- <h2>E-tickets</h2> -->
+            <!-- When tickets are selected and being validated -->
+            <img class="chevron" src="asset/img/left-chevron.avif" alt="chevron-icon">
+
+            <h2>Votre voyage</h2>
+            <!-- When being validated more icon is removed -->
+            <!-- <img class="more" src="asset/img/more.avif" alt="show-more-logo"> -->
         </div>
 
         <div id="with-tickets">
-            <h2 class="with-tickets-title">sur mon téléphone</h2>
+            <!-- When we are burying tickets -->
+            <!-- <h2 class="with-tickets-title">sur mon téléphone</h2> -->
+            <!-- When we are validating tickets -->
+            <div class="validation-title-container">
+                <h2 class="validation-title">En cours d'utilisation</h2>
+                <img id="hour-glass" src=" asset/img/hour-glass.avif" alt="hourg-lass-icon">
+            </div>
             <div id="with-tickets-container">
                 <!-- On click towards use tickets -->
                 <img src="asset/img/logo9.avif" alt="métropole-ticket">
-                <p> 1 Voyage Aix En bus </p>
-                <p>1 e-ticket disponible</p>
+
+                <!-- When validated -->
+                <div id="countdown-container">
+                    <p>Fin de validité:</p>
+                    <span>0 0 :</span>
+                    <span id="min-dozens" class="timer">6</span>
+                    <span id="min-unity" class="timer">0</span>
+                    <span>:</span>
+                    <span id="sec-dozens" class="timer">0 </span>
+                    <span id="sec-unity" class="timer">0</span>
+
+                </div>
+
+
+
+
+                <p class="selecting-paragraph"> 1 Voyage Aix En bus </p>
+                <p class="selecting-paragraph">1 e-ticket disponible</p>
             </div>
         </div>
 
@@ -59,15 +86,23 @@
         </div>
 
         <!-- Select using options -->
+
         <div id="validation">
+            <div id="triangle-up"></div>
             <div class="validation-container-one">
+
                 <h3>Mes validations</h3>
                 <div class="date-container">
                     <p>Aujourdhui - Dimanche 2 Juin</p>
                 </div>
                 <div class="ongoing-validation">
-                    <p>1 validation</p>
-                    <p class="validation-type">1 Voyage Aix en Provence</p>
+                    <div>
+                        <p>1 validation</p>
+                        <p class="validation-type">1 Voyage Aix en bus</p>
+                    </div>
+                    <div>
+                        <p class="time">22:58</p>
+                    </div>
                 </div>
             </div>
             <div class="validation-container-two">
@@ -318,6 +353,7 @@
 
     <script src="js/buy.js"></script>
     <script src="js/ticket-counter.js"></script>
+    <script src="js/timer.js"></script>
 </body>
 
 </html>
