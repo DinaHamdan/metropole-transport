@@ -47,6 +47,8 @@
             <div id="with-tickets-container">
                 <!-- On click towards use tickets -->
                 <img id="selected-ticket" src="asset/img/logo9.avif" alt="métropole-ticket">
+                <p class="while-using-para" class="uppercase">1 voyage aix en bus</p>
+                <p class="while-using-para">1 eticket disponible</p>
 
                 <!-- When validated -->
                 <div id="countdown-container">
@@ -72,8 +74,8 @@
         <!-- Selected tickets -->
         <div id="selected-tickets">
             <h3>1 Voyage Aix en Bus </h3>
-            <p>1 voyage disponible</p>
-            <p>Vous utiliser</p>
+            <p><span class="bold">1</span> voyage disponible</p>
+            <p class="bold">Vous utilisez</p>
             <div class="type-transport">
                 <p>le Bus</p>
                 <img class="correct" src="asset/img/correct.avif" alt="">
@@ -112,8 +114,8 @@
 
         </div>
         <!-- On click towards buy page -->
-        <a id="buy-link" href="#buy-tickets"><img class="with-tickets-shop-cart" src="asset/img/logo3bis.avif"
-                alt="shop-cart-logo">Acheter des titres</a>
+        <button id="buy-link"><img class="with-tickets-shop-cart" src="asset/img/logo3bis.avif"
+                alt="shop-cart-logo">Acheter des titres</button>
         <!-- Navigation -->
         <!-- Figcaption shouldnt be the child of a element Need to change it -->
         <div id="navigation">
@@ -215,7 +217,7 @@
             <div id="child-two">
                 <div id="total-container">
                     <p id="total-tickets">Total:<span class="amount"></span><span>€</span></p>
-                    <a id="select-buy" href="#terms-conditions">Acheter (<span class="total"></span>)</a>
+                    <button id="select-buy" href="#terms-conditions">Acheter (<span class="total"></span>)</button>
                     <!-- <a id="select-buy" href="#terms-conditions">Payer </a> -->
                 </div>
             </div>
@@ -406,7 +408,7 @@
         <div id="accepted-container">
             <img src="asset/img/logo16.avif" alt="accepted-logo">
             <h3>Paiement accepté</h3>
-            <p>Retrouvez vos titres dans votre compte et utilisez-les pour voyager facielement</p>
+            <p>Retrouvez vos titres dans votre compte et utilisez-les pour voyager facilement</p>
             <button id="close-link" href="">Fermer</button>
         </div>
     </section>

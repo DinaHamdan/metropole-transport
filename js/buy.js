@@ -47,12 +47,16 @@ payLink.addEventListener('click', () => {
     payLink.innerHTML = "Payer";
     totalPayTickets.style.display = "none";
     payLink.style.backgroundColor = "#fe3b0094";
-    totalPayContainer.style.borderTop = "none";
+    totalPayContainer.style.boxShadow = "none";
 });
 
 
 let agreeTerms = document.getElementById("terms");
 let payPage = document.getElementById("payment");
+
+
+
+
 
 
 agreeTerms.addEventListener('click', () => {
@@ -66,4 +70,11 @@ agreeTerms.addEventListener('click', () => {
 
     })
 
+})
+
+//Uncheck checkbox on
+let checkBox = document.getElementById("terms");
+
+window.addEventListener('load', () => {
+    checkBox.checked = false;
 })

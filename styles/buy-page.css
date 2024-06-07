@@ -104,6 +104,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 5px;
+  margin-left: 20px;
 }
 #buy-tickets #child-one .single-ticket-counter-parent .single-ticket-counter button {
   border-radius: 50%;
@@ -123,6 +125,10 @@
   height: 20px;
   border-radius: 5px;
   width: 32px;
+  margin-left: 20px;
+}
+#buy-tickets #child-one .single-ticket-counter-parent span {
+  margin-left: 20px;
 }
 #buy-tickets #child-one #multi-ticket {
   display: flex;
@@ -155,6 +161,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 5px;
   justify-content: center;
 }
 #buy-tickets #child-one .multi-ticket-counter-parent .multi-ticket-counter button {
@@ -181,7 +188,7 @@
   display: none;
 }
 #child-two #total-container {
-  border-top: 3px solid rgba(104, 97, 97, 0.568);
+  box-shadow: 0 -10px 20px -5px rgba(115, 115, 115, 0.75);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -199,13 +206,14 @@
   background-color: #fe3b00;
   border-radius: 10px;
   display: inline-block;
-  height: 40px;
+  height: 52px;
   width: 90%;
   text-align: center;
   text-decoration: none;
   color: white;
   font-weight: 400;
-  padding-top: 10px;
+  padding: 10px 0;
+  border: none;
 }
 
 @media screen and (min-width: 400px) {

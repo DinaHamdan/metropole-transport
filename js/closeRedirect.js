@@ -9,4 +9,5 @@ closeLink.addEventListener('click', () => {
     eTickets.style.display = "block";
     showTicket.style.display = "block";
     noTicketTitle.style.display = "none";
+    buyLink.style.margin = "200px 20px 50px 40px";
 });
