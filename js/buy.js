@@ -72,9 +72,3 @@ agreeTerms.addEventListener('click', () => {
 
 })
 
-//Uncheck checkbox on
-let checkBox = document.getElementById("terms");
-
-window.addEventListener('load', () => {
-    checkBox.checked = false;
-})

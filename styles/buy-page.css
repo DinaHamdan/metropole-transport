@@ -65,11 +65,9 @@
 #buy-tickets #buy-tickets-parent #terms-conditions #conditions #terms:checked {
   accent-color: black;
 }
-#buy-tickets #buy-tickets-parent #terms-conditions #conditions a {
+#buy-tickets #buy-tickets-parent #terms-conditions #conditions .fake-link {
   color: rgba(25, 25, 219, 0.685);
-}
-#buy-tickets #buy-tickets-parent #terms-conditions #conditions a::after {
-  color: rgba(25, 25, 219, 0.685);
+  text-decoration: underline;
 }
 #buy-tickets #child-one #single-ticket {
   display: flex;

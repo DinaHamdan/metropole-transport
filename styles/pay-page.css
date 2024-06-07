@@ -229,10 +229,11 @@
   width: 120px;
   height: 70px;
 }
-#payment #footer-container #pay-logo-container a {
+#payment #footer-container #pay-logo-container .mention-legal {
   margin-top: 10px;
   font-size: 1em;
   color: rgba(32, 29, 29, 0.6235294118);
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 400px) {

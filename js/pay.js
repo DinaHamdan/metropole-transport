@@ -1,13 +1,19 @@
 let acceptedPage = document.getElementById("accepted");
 let submitButton = document.getElementById("submit");
-let shopIcon = document.querySelector(".with-tickets-shop-cart")
+
+// let form = document.querySelector('form');
+
+
+
 submitButton.addEventListener('click', () => {
     payPage.style.display = "none";
     acceptedPage.style.display = "block";
     console.log("submit payment");
-    shopIcon.style.display = "inline-block";
 });
 
+submitButton.addEventListener('click', function (event) {
+    event.preventDefault();
+});
 
 let firstQuestionMark = document.getElementById("first-question-mark");
 let hiddenCardInfo = document.getElementById("hidden-card-info");
@@ -30,8 +36,3 @@ let closeCvvInfo = document.getElementById("close-cvv");
 closeCvvInfo.addEventListener('click', () => {
     hiddenCvvInfo.style.display = "none";
 })
-// let languageBtn = document.getElementById("language-button");
-// languageBtn.addEventListener('click', () => {
-//     languageBtn.innerHTML = 'ESP';
-//     languageBtn.innerHTML = 'ENG';
-// })

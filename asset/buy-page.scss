@@ -95,13 +95,11 @@
 
                 }
 
-                a {
+                .fake-link {
                     color: rgba(25, 25, 219, 0.685);
+                    text-decoration: underline;
                 }
 
-                a::after {
-                    color: rgba(25, 25, 219, 0.685);
-                }
 
             }
         }

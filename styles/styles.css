@@ -413,11 +413,9 @@
 #buy-tickets #buy-tickets-parent #terms-conditions #conditions #terms:checked {
   accent-color: black;
 }
-#buy-tickets #buy-tickets-parent #terms-conditions #conditions a {
+#buy-tickets #buy-tickets-parent #terms-conditions #conditions .fake-link {
   color: rgba(25, 25, 219, 0.685);
-}
-#buy-tickets #buy-tickets-parent #terms-conditions #conditions a::after {
-  color: rgba(25, 25, 219, 0.685);
+  text-decoration: underline;
 }
 #buy-tickets #child-one #single-ticket {
   display: flex;
@@ -800,10 +798,11 @@
   width: 120px;
   height: 70px;
 }
-#payment #footer-container #pay-logo-container a {
+#payment #footer-container #pay-logo-container .mention-legal {
   margin-top: 10px;
   font-size: 1em;
   color: rgba(32, 29, 29, 0.6235294118);
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 400px) {

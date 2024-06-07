@@ -108,8 +108,8 @@
                     <img class="info" src="asset/img/correct.avif" alt="">
                     <p class="correspondance">Correspondance,accès au Métro, Contrôle</p>
                 </div>
-                <button id="control-link" href="">Métro ou Contrôle</button>
-                <button id="correspondance" href="">Correspondance</button>
+                <button id="control-link">Métro ou Contrôle</button>
+                <button id="correspondance">Correspondance</button>
             </div>
 
         </div>
@@ -165,7 +165,8 @@
                 </div>
                 <div id="conditions">
                     <input required id="terms" name="terms" type="checkbox">
-                    <label for="terms">J'ai lu et j'accepte les <a href="">conditions générales de vente</a></label>
+                    <label for="terms">J'ai lu et j'accepte les <span class="fake-link">conditions générales de
+                            vente</span></label>
                 </div>
             </div>
 
@@ -217,8 +218,8 @@
             <div id="child-two">
                 <div id="total-container">
                     <p id="total-tickets">Total:<span class="amount"></span><span>€</span></p>
-                    <button id="select-buy" href="#terms-conditions">Acheter (<span class="total"></span>)</button>
-                    <!-- <a id="select-buy" href="#terms-conditions">Payer </a> -->
+                    <button id="select-buy">Acheter (<span class="total"></span>)</button>
+                    <!-- <a id="select-buy">Payer </a> -->
                 </div>
             </div>
         </div>
@@ -380,8 +381,9 @@
             </div>
 
             <div id="submit-button-container">
-                <input id="submit" type="submit" value="Valider">
+                <button id="submit">VALIDER</button>
             </div>
+
         </form>
         <div id="card-logo-container">
             <img src="asset/img/logo10.avif" alt="visa-logo">
@@ -395,7 +397,7 @@
                 <img src=" asset/img/logo13.avif" alt="payzen-logo">
                 <img src="asset/img/logo14.avif" alt="dss-logo">
                 <p>Copyright Lyra &copy; 2024</p>
-                <a href="">Mentions légales</a>
+                <p class="mention-legal">Mentions légales</p>
             </div>
         </div>
     </section>
@@ -409,15 +411,15 @@
             <img src="asset/img/logo16.avif" alt="accepted-logo">
             <h3>Paiement accepté</h3>
             <p>Retrouvez vos titres dans votre compte et utilisez-les pour voyager facilement</p>
-            <button id="close-link" href="">Fermer</button>
+            <button id="close-link">Fermer</button>
         </div>
     </section>
+    <script src="js/buy.js"></script>
+    <script src="js/control.js"></script>
+    <script src="js/use.js"></script>
+    <script src="js/pay.js"></script>
 
     <script src="js/closeRedirect.js"></script>
-    <script src="js/control.js"></script>
-    <script src="js/buy.js"></script>
-    <script src="js/pay.js"></script>
-    <script src="js/use.js"></script>
     <script src="js/ticket-counter.js"></script>
     <script src="js/timer.js"></script>
 
