@@ -1,16 +1,13 @@
 let acceptedPage = document.getElementById("accepted");
 let submitButton = document.getElementById("submit");
 
-// let form = document.querySelector('form');
-
-
 
 submitButton.addEventListener('click', () => {
     payPage.style.display = "none";
     acceptedPage.style.display = "block";
     console.log("submit payment");
 });
-
+//prevent page from relaoding
 submitButton.addEventListener('click', function (event) {
     event.preventDefault();
 });
@@ -35,4 +32,11 @@ secondQuestionMark.addEventListener('click', () => {
 let closeCvvInfo = document.getElementById("close-cvv");
 closeCvvInfo.addEventListener('click', () => {
     hiddenCvvInfo.style.display = "none";
+})
+
+
+let goBackPayment = document.getElementById("go-back-payment");
+goBackPayment.addEventListener('click', () => {
+    payPage.style.display = "none";
+    buyPage.style.display = "block";
 })

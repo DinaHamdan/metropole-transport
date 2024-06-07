@@ -12,6 +12,12 @@ metroControl.addEventListener('click', () => {
 
 })
 
+let closeMetroControl = document.getElementById('closeControl');
+closeMetroControl.addEventListener('click', () => {
+    controlPage.style.display = "none";
+    eTickets.style.display = "block";
+})
+
 let correspondanceControl = document.getElementById("correspondance");
 let controlParentOne = document.getElementById("control-parent-container-one");
 
@@ -23,3 +29,4 @@ correspondanceControl.addEventListener('click', () => {
     controlParentTwo.style.display = "none";
 
 })
+

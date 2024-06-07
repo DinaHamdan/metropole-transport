@@ -28,7 +28,7 @@
 
         <div id="ticket-orange-bar">
             <!-- When tickets are selected and being validated -->
-            <img class="chevron" src="asset/img/left-chevron.avif" alt="chevron-icon">
+            <img id="go-back" class="chevron" src="asset/img/left-chevron.avif" alt="chevron-icon">
             <h2>E-tickets</h2>
 
             <!-- <h2>Votre voyage</h2> -->
@@ -142,7 +142,7 @@
         <!-- Orange bar  -->
         <div id="buy-orange-bar">
             <!-- when no tickets are selected-->
-            <img class="cross" src="asset/img/cross.avif" alt="close-icon">
+            <img id="go-back-choose" class="cross" src="asset/img/cross.avif" alt="close-icon">
             <!-- When tickets are selected -->
             <!-- <img class="chevron" src="asset/img/left-chevron.avif" alt="chevron-icon"> -->
 
@@ -227,7 +227,7 @@
     <!-- Correspondance and control page -->
     <section id="control">
         <div id="control-orange-bar">
-            <img class="cross" src="asset/img/cross.avif" alt="close-icon">
+            <img id="closeControl" class="cross" src="asset/img/cross.avif" alt="close-icon">
             <h2>Correspondance, Métro, Contrôle</h2>
         </div>
 
@@ -293,7 +293,7 @@
     <section id="payment">
         <!-- Orange bar  -->
         <div id="payment-orange-bar">
-            <img class="chevron" src="asset/img/left-chevron.avif" alt="chevron-icon">
+            <img id="go-back-payment" class="chevron" src="asset/img/left-chevron.avif" alt="chevron-icon">
             <h2>Paiement</h2>
         </div>
         <div id="logo-language-container">
@@ -304,12 +304,12 @@
 
 
         <div id="total-pay">
-            <p>Montant : 1,20 EUR <span class="amount"></span></p>
+            <p id="amount">Montant : 1,20 EUR <span class="amount"></span></p>
             <img class="down-arrow" src="asset/img/down-arrow.avif" alt="">
         </div>
 
         <form action="">
-            <label class="card-label" for="card">Numéro de carte</label>
+            <label id="card-nb" class="card-label" for="card">Numéro de carte</label>
             <div id="card-info">
                 <input id="card" name="card" type="text">
                 <img class="card-logo" src="asset/img/card.avif" alt="card-logo">
@@ -330,7 +330,7 @@
             </div>
             <div id="card-date-container">
                 <select id="month" name="month">
-                    <option selected>mois</option>
+                    <option id="month-lang" selected>mois</option>
                     <option>01-Janvier</option>
                     <option>02-Février</option>
                     <option>03-Mars</option>
@@ -347,7 +347,7 @@
                 <label for="year"></label>
                 <select id="year" name="year">
 
-                    <option selected>année</option>
+                    <option id="year-lang" selected>année</option>
                     <option>2024</option>
                     <option>2025</option>
                     <option>2026</option>
@@ -392,7 +392,7 @@
         </div>
 
         <div id="footer-container">
-            <p>Annuler et retourne à la boutique</p>
+            <p id="cancel-msg">Annuler et retourne à la boutique</p>
             <div id="pay-logo-container">
                 <img src=" asset/img/logo13.avif" alt="payzen-logo">
                 <img src="asset/img/logo14.avif" alt="dss-logo">
@@ -418,7 +418,7 @@
     <script src="js/control.js"></script>
     <script src="js/use.js"></script>
     <script src="js/pay.js"></script>
-
+    <script src="js/language.js"></script>
     <script src="js/closeRedirect.js"></script>
     <script src="js/ticket-counter.js"></script>
     <script src="js/timer.js"></script>

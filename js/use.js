@@ -28,3 +28,12 @@ useLink.addEventListener('click', () => {
     selectTicket.style.boxShadow = "0 0 20px rgba(115,115,115,0.75)";
 
 })
+
+let goBack = document.getElementById("go-back");
+
+goBack.addEventListener('click', () => {
+    useTicket.style.display = "block";
+    countDown.style.display = "none";
+    validation.style.display = "none";
+
+})

@@ -11,10 +11,6 @@ buyLink.addEventListener('click', () => {
 });
 
 
-
-
-
-
 let addSingleButton = document.getElementById("plus-btn");
 let addMultiButton = document.getElementById("multi-plus-btn");
 let containerPayLink = document.getElementById("child-two");
@@ -72,3 +68,11 @@ agreeTerms.addEventListener('click', () => {
 
 })
 
+
+let goBackChoose = document.getElementById("go-back-choose");
+goBackChoose.addEventListener('click', () => {
+    eTickets.style.display = "block";
+    
+    buyPage.style.display = "none";
+
+})
