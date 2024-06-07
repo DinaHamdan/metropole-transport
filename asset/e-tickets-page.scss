@@ -77,16 +77,14 @@
             justify-content: center;
             align-items: center;
 
-            .uppercase {
+            .while-using-para {
+                font-size: 0.8em;
+            }
+
+            #uppercase {
                 text-transform: uppercase;
                 font-weight: 500;
                 padding: 10px;
-            }
-
-            .while-using-para {
-                font-size: 0.8em;
-
-
             }
 
             #countdown-container {

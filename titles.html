@@ -47,7 +47,7 @@
             <div id="with-tickets-container">
                 <!-- On click towards use tickets -->
                 <img id="selected-ticket" src="asset/img/logo9.avif" alt="métropole-ticket">
-                <p class="while-using-para" class="uppercase">1 voyage aix en bus</p>
+                <p class="while-using-para" id="uppercase">1 voyage aix en bus</p>
                 <p class="while-using-para">1 eticket disponible</p>
 
                 <!-- When validated -->
@@ -312,11 +312,11 @@
             <div id="card-info">
                 <input id="card" name="card" type="text">
                 <img class="card-logo" src="asset/img/card.avif" alt="card-logo">
-                <p class="question-mark">?</p>
+                <p id="first-question-mark" class="question-mark">?</p>
             </div>
             <!-- Need to show on click -->
             <div id="hidden-card-info">
-                <span class="close">X</span>
+                <span id="close-card" class="close">X</span>
                 <p>Une fois le numéro correctement renseign", la marque de votre carte bancaire apparaîtra.
                     Si votre
                     carte contient plusieurs marques, une marque apparaîtra par défaut et vous pourrez
@@ -363,12 +363,12 @@
 
             <div id="cvv-info">
                 <input id="cvv" name="cvv" type="text">
-                <p class="question-mark">?</p>
+                <p id="second-question-mark" class="question-mark">?</p>
             </div>
             <!-- Need to show on click -->
 
             <div id="hidden-cvv-info">
-                <span class="close">X</span>
+                <span id="close-cvv" class="close">X</span>
                 <p>Ce champs est obligatoire uniquement pour les moyens de Paiement possédant un
                     cryptogramme.
                     Le
