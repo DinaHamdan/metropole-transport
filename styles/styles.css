@@ -138,6 +138,39 @@
   text-transform: uppercase;
   display: none;
 }
+#e-tickets #with-tickets #used-ticket-container {
+  display: none;
+}
+#e-tickets #with-tickets #used-ticket-container #used-ticket {
+  border-radius: 20px;
+}
+#e-tickets #with-tickets #used-ticket-container #being-used-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 283px;
+  height: 180px;
+  border-radius: 20px;
+  background-color: rgba(37, 35, 35, 0.438);
+  color: white;
+  font-size: 1em;
+  padding: 5px 0;
+  margin-top: -190px;
+  gap: 5px;
+}
+#e-tickets #with-tickets #used-ticket-container #being-used-container #lock-container {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f3f5f4;
+  padding-left: 5px;
+}
+#e-tickets #with-tickets #used-ticket-container #being-used-container #lock-container #lock {
+  width: 25px;
+  height: 25px;
+}
 #e-tickets #no-tickets {
   display: flex;
   flex-direction: column;

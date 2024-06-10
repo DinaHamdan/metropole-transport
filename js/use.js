@@ -31,9 +31,16 @@ useLink.addEventListener('click', () => {
 
 let goBack = document.getElementById("go-back");
 
+let beingUsed = document.getElementById('used-ticket-container');
+
 goBack.addEventListener('click', () => {
-    useTicket.style.display = "block";
+    beingUsed.style.display = "block";
     countDown.style.display = "none";
+    selectTicket.style.display = "none";
     validation.style.display = "none";
+    ticketTitle.style.display = "block";
+    whileUsingParagraph.style.display = "none";
+    localStorage.setItem('usedTicketJSON', JSON.stringify(beingUsed));
+    validationTitle.style.display = "none";
 
 })

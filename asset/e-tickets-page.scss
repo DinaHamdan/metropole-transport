@@ -108,6 +108,8 @@
                 }
             }
 
+
+
             .selecting-paragraph {
                 padding: 5px;
                 font-size: 0.7em;
@@ -116,6 +118,49 @@
 
                 //When tickets are selected
                 display: none;
+            }
+        }
+
+
+        #used-ticket-container {
+            display: none;
+
+            #used-ticket {
+                border-radius: 20px;
+            }
+
+
+            #being-used-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                width: 283px;
+                height: 180px;
+                border-radius: 20px;
+                background-color: rgba(37, 35, 35, 0.438);
+                color: white;
+                // text-align: center;
+                font-size: 1em;
+                padding: 5px 0;
+                margin-top: -190px;
+                gap: 5px;
+
+
+                #lock-container {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: #f3f5f4;
+                    padding-left: 5px;
+
+                    #lock {
+                        width: 25px;
+                        height: 25px;
+
+                    }
+                }
             }
         }
     }

@@ -27,5 +27,8 @@ window.addEventListener('load', () => {
         buyLink.style.margin = "200px 20px 50px 40px";
         shopIcon.style.display = "inline-block";
     }
+    // if ((localStorage.getItem('ticketJSON')) && (localStorage.getItem('usedTicketJSON'))) {
+    //     beingUsed.style.display = "block";
+    // }
 })
 
