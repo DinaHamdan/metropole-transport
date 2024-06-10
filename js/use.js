@@ -26,7 +26,7 @@ useLink.addEventListener('click', () => {
     // selectTicket.style.borderRadius = "0";
     whileUsingParagraph.style.display = "none"
     selectTicket.style.boxShadow = "0 0 20px rgba(115,115,115,0.75)";
-
+    localStorage.removeItem('ticketJSON');
 })
 
 let goBack = document.getElementById("go-back");
