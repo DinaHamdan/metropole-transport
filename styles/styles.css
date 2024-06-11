@@ -16,7 +16,7 @@
   display: none;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 800px) {
   #welcome-page {
     background-color: white;
   }
@@ -374,7 +374,7 @@
   color: #fe3b00;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 800px) {
   #e-tickets {
     display: none;
   }
@@ -595,7 +595,7 @@
   border: none;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 800px) {
   #buy-tickets {
     display: none;
   }
@@ -838,7 +838,7 @@
   text-decoration: underline;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 800px) {
   #payment {
     display: none;
   }
@@ -899,7 +899,7 @@
   border: none;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 800px) {
   #accepted {
     display: none;
   }
@@ -982,7 +982,7 @@
   margin-left: 10px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 800px) {
   #control {
     display: none;
   }

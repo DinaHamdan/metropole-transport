@@ -76,7 +76,7 @@
   margin-left: 10px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 800px) {
   #control {
     display: none;
   }

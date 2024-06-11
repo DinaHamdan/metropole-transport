@@ -329,7 +329,7 @@
   color: #fe3b00;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 800px) {
   #e-tickets {
     display: none;
   }

@@ -16,7 +16,7 @@
   display: none;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 800px) {
   #welcome-page {
     background-color: white;
   }
