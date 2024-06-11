@@ -72,7 +72,7 @@ agreeTerms.addEventListener('click', () => {
 let goBackChoose = document.getElementById("go-back-choose");
 goBackChoose.addEventListener('click', () => {
     eTickets.style.display = "block";
-    
+
     buyPage.style.display = "none";
 
-})gi
+})
