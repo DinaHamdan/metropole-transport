@@ -3,6 +3,7 @@ let minusBtn = document.getElementById('minus-btn');
 let counter = document.getElementById('counter');
 let plusBtn = document.getElementById('plus-btn');
 let singlePrice = document.querySelector('.single-price');
+let totalAmount = document.querySelector('.amount');
 
 //declare the amount of tickets to 0 and add it to the html element
 let countNum = 0;
@@ -94,7 +95,8 @@ multiMinusBtn.addEventListener("click", () => {
         multiCountNum = 0;
         multiCounter.innerHTML = multiCountNum;
     }
-
+    // let price = multiplePrice.innerContent;
+    // total = +price;
 
 });
 
@@ -115,7 +117,6 @@ multiPlusBtn.addEventListener("click", () => {
 //let multiPrix = JSON.parse(localStorage.getItem('multPrix'));
 // let singlePrix = JSON.parse(localStorage.getItem('multPrix'));
 
-let totalAmount = document.querySelector('.amount');
 let totalTickets = document.querySelector('.total');
 //parse Numbers of the price
 let multiInteger = parseFloat(multiplePrice.innerHTML);

@@ -1,0 +1,47 @@
+{
+    "name": "Métropole Mobilité",
+    "short_name": "Mobilité",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_colour": "black",
+    "description": "Application du réseau métropole ",
+    "icons": [
+        {
+            "src": "asset/img/icon.avif",
+            "sizes": "48x48",
+            "type": "image/avif"
+        },
+        {
+            "src": "asset/img/icon.avif",
+            "sizes": "72x72",
+            "type": "image/avif"
+        },
+        {
+            "src": "asset/img/icon.avif",
+            "sizes": "96x96",
+            "type": "image/avif"
+        },
+        {
+            "src": "asset/img/icon.avif",
+            "sizes": "144x144",
+            "type": "image/avif"
+        },
+        {
+            "src": "asset/img/icon.avif",
+            "sizes": "168x168",
+            "type": "image/avif"
+        },
+        {
+            "src": "asset/img/icon.avif",
+            "sizes": "192x192",
+            "type": "image/avif"
+        }
+    ],
+    "related_applications": [
+        {
+            "platform": "play",
+            "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
+        }
+    ]
+}
