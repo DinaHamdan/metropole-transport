@@ -1,7 +1,7 @@
 {
     "name": "Métropole Mobilité",
     "short_name": "Mobilité",
-    "start_url": "/",
+    "start_url": ".",
     "display": "standalone",
     "background_color": "white",
     "theme_colour": "black",
