@@ -75,4 +75,4 @@ goBackChoose.addEventListener('click', () => {
     
     buyPage.style.display = "none";
 
-})
+})gi
