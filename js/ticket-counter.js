@@ -3,22 +3,68 @@ let minusBtn = document.getElementById('minus-btn');
 let counter = document.getElementById('counter');
 let plusBtn = document.getElementById('plus-btn');
 let singlePrice = document.querySelector('.single-price');
-let totalAmount = document.querySelector('.amount');
-
+let totalAmount1 = document.querySelector('#latotal');
+let totalAmount2 = document.querySelector('#latotal-2');
+let totalAmount3 = document.querySelector('#latotal-3');
+let totalTicks = document.querySelector('#totalTickets');
+let totalTicks2 = document.querySelector('#totalTickets-2');
+let totalTickets = document.querySelector('.total');
 //declare the amount of tickets to 0 and add it to the html element
 let countNum = 0;
 counter.innerHTML = countNum;
 let total = 0;
 
+
+// //parse Numbers of the ticket
+// let multiSumCounter = parseFloat(multiCounter.innerHTML);
+// let sumCounter = parseFloat(counter.innerHTML);
+// //Add them together
+// ticketSum = multiSumCounter + sumCounter;
+// //Add them to inner html
+// totalTickets.innerHTML = ticketSum;
+
+//Function to update the total of the
+let unitPriceSolo = 1.20;
+let unitPriceGroup = 9.00;
+
+
+function updateTotal() {
+    //parse Numbers of the price
+    // let singleInteger = parseFloat(singlePrice.textContent);
+    // let multiInteger = parseFloat(multiplePrice.textContent);
+    if (incrementationSolo < 0) {
+        incrementationSolo = 0;
+    }
+    if (incrementationGroup < 0) {
+        incrementationGroup = 0;
+    }
+    //Add them together
+    amountSum = incrementationSolo + incrementationGroup;
+    //Add them to inner html
+    totalAmount1.innerHTML = amountSum;
+    totalAmount2.innerHTML = amountSum;
+    totalAmount3.innerHTML = amountSum;
+
+    amountNb = countNum + multiCountNum;
+    console.log(amountNb);
+    //Add number
+    totalTicks.innerHTML = amountNb;
+    totalTicks2.innerHTML = amountNb;
+}
+
+//
 //Declare the price of single ticket and add it to the html element
 let priceNumSingle = 1.20;
 singlePrice.innerHTML = priceNumSingle;
+let incrementationSolo = 0;
 
 //add an event listener to substract
 minusBtn.addEventListener("click", () => {
     //Counter for the price
     priceNumSingle -= 1.20;
     singlePrice.textContent = priceNumSingle;
+    incrementationSolo -= 1.2;
+
     //Add a condition not to let the price go to negative
     if (priceNumSingle < 1.2) {
         priceNumSingle = 1.20;
@@ -38,6 +84,8 @@ minusBtn.addEventListener("click", () => {
         counter.innerHTML = countNum;
     }
 
+    updateTotal();
+
 });
 
 
@@ -48,6 +96,9 @@ plusBtn.addEventListener("click", () => {
     countNum += 1;
     counter.textContent = countNum;
 
+    //
+    incrementationSolo += 1.2;
+    console.log('this is incrementatio Solo +' + incrementationSolo);
 
     //Counter for the price with a condition to start adding if tickets are equal or more than two
     if (countNum >= 2) {
@@ -60,8 +111,8 @@ plusBtn.addEventListener("click", () => {
     }
     // localStorage.setItem('singlePrix', JSON.stringify(singlePrice.innerHTML));
     // localStorage.setItem('singleTicketSum', JSON.stringify(counter.innerHTML));
-    let singleInteger = parseFloat(singlePrice.textContent);
 
+    updateTotal();
 
 
 })
@@ -81,28 +132,19 @@ multiCounter.innerHTML = multiCountNum;
 let priceNumMultiple = 9.00;
 multiplePrice.innerHTML = priceNumMultiple;
 
-//Total
-let incrementationSolo = 0;
+
+//
 let incrementationGroup = 0;
-let unitPriceSolo = 1.20;
-let unitPriceGroup = 9.00;
-
-let totalTickets = document.querySelector('.total');
-
-function updateTotal() {
-    let total = (incrementationSolo * unitPriceSolo) + (incrementationGroup * unitPriceGroup);
-    totalTickets.innerText = total.toFixed(2) + '€';
-
-    totalOrderValue.innerText = total.toFixed(2) + '€';
-    paymentAmount.innerText = total.toFixed(2) + ' EUR';
-
-}
 
 //add an event listener to substract
 multiMinusBtn.addEventListener("click", () => {
     //Counter for the price
     priceNumMultiple -= 9.00;
     multiplePrice.innerHTML = priceNumMultiple;
+    //
+    incrementationGroup -= 9.00;
+    console.log('this is incrementatio group -' + incrementationGroup);
+
     //Add a condition not to let the price go to negative
     if (priceNumMultiple < 9.00) {
         priceNumMultiple = 9.00;
@@ -120,15 +162,18 @@ multiMinusBtn.addEventListener("click", () => {
         multiCounter.innerHTML = multiCountNum;
     }
 
-    //let multiInteger = parseFloat(multiplePrice.textContent);
-
-
+    updateTotal();
 });
 
 multiPlusBtn.addEventListener("click", () => {
     //Counter for the ticket number
     multiCountNum += 1;
     multiCounter.innerHTML = multiCountNum;
+
+    incrementationGroup += 9.00;
+    console.log('this is incrementatio group +' + incrementationGroup);
+
+
     //Counter for the price with a condition to start adding if tickets are equal or more than two
     if (multiCountNum >= 2) {
         priceNumMultiple += 9.00;
@@ -137,26 +182,12 @@ multiPlusBtn.addEventListener("click", () => {
     // localStorage.setItem('multPrix', JSON.stringify(multiplePrice.innerHTML));
     // localStorage.setItem('multiTicketSum', JSON.stringify(multiCounter.innerHTML));
 
-
+    updateTotal();
 });
 //let multiPrix = JSON.parse(localStorage.getItem('multPrix'));
 // let singlePrix = JSON.parse(localStorage.getItem('multPrix'));
 
-//parse Numbers of the price
-//Add them together
-amountSum = multiInteger + singleInteger;
-console.log(amountSum)
-//Add them to inner html
-totalAmount.textContent = amountSum;
 
-
-//parse Numbers of the ticket
-let multiSumCounter = parseFloat(multiCounter.innerHTML);
-let sumCounter = parseFloat(counter.innerHTML);
-//Add them together
-ticketSum = multiSumCounter + sumCounter;
-//Add them to inner html
-totalTickets.innerHTML = ticketSum;
 
 
 let buyingSummary = document.querySelector('#buying-summary');
