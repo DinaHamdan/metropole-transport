@@ -39,7 +39,7 @@ function updateTotal() {
         incrementationGroup = 0;
     }
     //Add them together
-    amountSum = incrementationSolo + incrementationGroup;
+    amountSum = Math.round(incrementationSolo + incrementationGroup);
     //Add them to inner html
     totalAmount1.innerHTML = amountSum;
     totalAmount2.innerHTML = amountSum;
@@ -62,13 +62,13 @@ let incrementationSolo = 0;
 minusBtn.addEventListener("click", () => {
     //Counter for the price
     priceNumSingle -= 1.20;
-    singlePrice.textContent = priceNumSingle;
+    singlePrice.textContent = Math.round(priceNumSingle);
     incrementationSolo -= 1.2;
 
     //Add a condition not to let the price go to negative
     if (priceNumSingle < 1.2) {
         priceNumSingle = 1.20;
-        singlePrice.textContent = priceNumSingle;
+        singlePrice.textContent = Math.round(priceNumSingle);
 
     }
     // localStorage.setItem('singlePrix', JSON.stringify(singlePrice.innerHTML));
